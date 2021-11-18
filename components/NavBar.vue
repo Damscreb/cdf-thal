@@ -17,6 +17,7 @@ export default {
         flex-direction: row;
         border-radius: 15px;
         margin-bottom: 1.5em;
+        padding: 0 0.5em;
     }
 
     h3 {
