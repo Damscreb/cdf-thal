@@ -6,13 +6,13 @@
     </main>
 </template>
 <script>
-// import Footer from '~/components/Footer.vue'
+// Import Footer from '~/components/Footer.vue'
 import NavBar from '~/components/NavBar.vue'
 export default {
-  components: {
-    // Footer,
-    NavBar
-  }
+    'components': {
+        // Footer,
+        NavBar
+    }
 }
 </script>
 <style lang="scss">

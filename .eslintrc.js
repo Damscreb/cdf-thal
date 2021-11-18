@@ -69,7 +69,7 @@ module.exports = {
       'line-comment-position': 'error',
       'linebreak-style': [
           'error',
-          'unix'
+          'windows'
       ],
       'lines-around-comment': 'error',
       'lines-between-class-members': 'error',
