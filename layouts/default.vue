@@ -2,15 +2,15 @@
     <main>
         <NavBar />
         <Nuxt />
-        <!-- <Footer /> -->
+        <Footer />
     </main>
 </template>
 <script>
-// Import Footer from '~/components/Footer.vue'
+import Footer from '~/components/Footer.vue'
 import NavBar from '~/components/NavBar.vue'
 export default {
     'components': {
-        // Footer,
+        Footer,
         NavBar
     }
 }
@@ -43,6 +43,6 @@ export default {
         max-width: 1200px;
         display: flex;
         flex-direction: column;
-        padding: 2em 0;
+        padding: 2em 0 0 0;
     }
 </style>

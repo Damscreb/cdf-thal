@@ -23,9 +23,11 @@ export default {
     h3 {
         margin: 1em;
         color: var(--color-text);
+        transition: 0.2s ease-in-out;
         &:hover {
             cursor: pointer;
             color: var(--color-text-highlight);
+            transition: 0.2s ease-in-out;
         }
     }
 </style>

@@ -23,22 +23,25 @@ export default {}
 </script>
 <style lang="scss" scoped>
     h2, p {
-      color: var(--color-text);
+        color: var(--color-text);
     }
 
     h2 {
-      margin-bottom: 1em;
-      text-decoration: underline;
+        margin-bottom: 1em;
+        text-decoration: underline;
+        font-size: 1.6em;
+        letter-spacing: 1px;
     }
 
     p {
-      margin-bottom: 0.7em;
+        margin-bottom: 0.7em;
+        font-size: 1.1em;
     }
 
     img {
-      width: 100%;
-      border-radius: 15px;
-      margin-bottom: 2em;
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 2em;
     }
 
     span {
