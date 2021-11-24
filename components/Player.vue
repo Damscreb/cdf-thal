@@ -26,12 +26,12 @@ export default {
     .joueur {
         display: flex;
         flex-direction: column;
-        width: 200px;
-        height: 250px;
+        width: 160px;
+        height: 200px;
         background-color: var(--color-black);
         border-radius: 25px;
         overflow: hidden;
-        margin: 1em;
+        margin: 1em 0.5em;
             transition: 0.2s ease-in-out;
         & img {
             border-radius: 25px;
@@ -46,6 +46,8 @@ export default {
             height: 20%;
             & h4 {
                 color: var(--color-text);
+                padding: 0 1em;
+                text-align: center;
             }
         }
         &:hover {

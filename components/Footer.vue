@@ -21,12 +21,13 @@ export default {
 <style scoped lang="scss">
     footer {
         background-color: var(--color-black);
-        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         border-radius: 15px 15px 0 0;
         padding: 0 1em;
+        flex-wrap: wrap;
     }
 
     a {
@@ -51,19 +52,19 @@ export default {
         font-size: 1.5em;
     }
 
-    .twitch, .twitch ~ h3:hover {
+    .twitch, .twitch:hover ~ h3 {
         color: #6441a5;
     }
 
-    .youtube, .youtube ~ h3:hover {
+    .youtube, .youtube:hover ~ h3 {
         color: #c4302b;
     }
 
-    .twitter, .twitter ~ h3:hover {
+    .twitter, .twitter:hover ~ h3 {
         color: #00acee;
     }
 
-    .discord, .discord ~ h3:hover {
+    .discord, .discord:hover ~ h3 {
         color: #738adb;
     }
 </style>
