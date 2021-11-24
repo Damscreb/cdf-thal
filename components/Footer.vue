@@ -1,9 +1,17 @@
 <template>
     <footer>
-        <a href=""><Font-awesome-icon class="icon twitch" :icon="['fab', 'twitch']" /><h3 class="font-text">Twitch</h3></a>
-        <a href=""><Font-awesome-icon class="icon youtube" :icon="['fab', 'youtube']" /><h3 class="font-text">Youtube</h3></a>
-        <a href=""><Font-awesome-icon class="icon twitter" :icon="['fab', 'twitter']" /><h3 class="font-text">Twitter</h3></a>
-        <a href=""><Font-awesome-icon class="icon discord" :icon="['fab', 'discord']" /><h3 class="font-text">Discord</h3></a>
+        <a href="https://www.twitch.tv/thalounette">
+            <Font-awesome-icon class="icon twitch" :icon="['fab', 'twitch']" /><h3 class="font-text">Twitch</h3>
+        </a>
+        <a href="https://www.youtube.com/channel/UCZxpgDdokrp3rjLxuM69pRA">
+            <Font-awesome-icon class="icon youtube" :icon="['fab', 'youtube']" /><h3 class="font-text">Youtube</h3>
+        </a>
+        <a href="https://twitter.com/Thalounette_">
+            <Font-awesome-icon class="icon twitter" :icon="['fab', 'twitter']" /><h3 class="font-text">Twitter</h3>
+        </a>
+        <a href="https://discord.gg/BankCjPtg2">
+            <Font-awesome-icon class="icon discord" :icon="['fab', 'discord']" /><h3 class="font-text">Discord</h3>
+        </a>
     </footer>
 </template>
 <script>
@@ -35,7 +43,6 @@ export default {
         transition: 0.2s ease-in-out;
         &:hover {
             cursor: pointer;
-            color: var(--color-text-highlight);
             transition: 0.2s ease-in-out;
         }
     }
@@ -44,19 +51,19 @@ export default {
         font-size: 1.5em;
     }
 
-    .twitch {
+    .twitch, .twitch ~ h3:hover {
         color: #6441a5;
     }
 
-    .youtube {
+    .youtube, .youtube ~ h3:hover {
         color: #c4302b;
     }
 
-    .twitter {
+    .twitter, .twitter ~ h3:hover {
         color: #00acee;
     }
 
-    .discord {
+    .discord, .discord ~ h3:hover {
         color: #738adb;
     }
 </style>

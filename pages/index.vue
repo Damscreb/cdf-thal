@@ -16,10 +16,58 @@
                 <h2>LES JOUEURS</h2>
             </div>
         </div>
+        <div class="players-display">
+            <Player v-for="joueur in joueurs" :key="joueur.name" :name="joueur.name" :avatar="joueur.avatar" />
+        </div>
     </div>
 </template>
 <script>
-export default {}
+import Player from '~/components/Player.vue'
+export default {
+    'components': {Player},
+    data () {
+        return {
+            'joueurs': [
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/15/05/52/red-fox-6796430_960_720.jpg',
+                    'name': 'Elunnor'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/18/22/17/butterfly-6807529_960_720.jpg',
+                    'name': 'Thalounette'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2021/05/23/00/21/woman-6274879_960_720.png',
+                    'name': 'Elhyar'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2020/06/10/02/22/caricature-5280770_960_720.jpg',
+                    'name': 'Melo'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2021/08/26/15/39/cat-6576397_960_720.jpg',
+                    'name': 'Aramatu'
+                },
+                {
+                    'avatar': 'https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-21.png',
+                    'name': 'Sus'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2018/11/19/05/53/animal-3824672_960_720.jpg',
+                    'name': 'MisterLu'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2020/07/10/19/07/she-5391770_960_720.jpg',
+                    'name': 'Clem'
+                },
+                {
+                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/15/21/39/rose-6799477_960_720.jpg',
+                    'name': 'Une jolie Rose Blanche'
+                }
+            ]
+        }
+    }
+}
 </script>
 <style lang="scss" scoped>
     h2, p {
@@ -58,6 +106,15 @@ export default {}
         text-align: center;
         margin-bottom: 1em;
         margin-inline: auto;
-        width: 80%;
+        width: 85%;
+    }
+
+    .players-display {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2.5em;
     }
 </style>
