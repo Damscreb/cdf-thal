@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="infos-container">
         <input id="infos" type="checkbox">
         <label for="infos">
             <h2 class="font-title">INFORMATIONS GÉNÉRALES</h2>
@@ -27,10 +27,20 @@
         }
         &:checked ~ .text {
             padding-top: 0.75em;
-            margin-bottom: 2em;
+            padding-bottom: 2em;
             transition: .3s linear;
+            position: relative;
             &-infos{
                 height: 360px;
+            }
+            &::after  {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: var(--color-text-highlight);
+                position: absolute;
+                bottom: 10px;
+                border-radius: 1px;
             }
         }
     }

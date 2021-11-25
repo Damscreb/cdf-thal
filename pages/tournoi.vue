@@ -41,7 +41,6 @@ export default {
             width: 80px;
             height: 80px;
             position: absolute;
-            z-index: 5;
             top: -20px;
         }
         &::after {

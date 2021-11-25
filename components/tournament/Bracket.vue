@@ -22,10 +22,19 @@
         }
         &:checked ~ .text {
             padding-top: 0.75em;
-            margin-bottom: 2em;
+            padding-bottom: 2em;
             transition: .3s linear;
             &-bracket{
                 height: 850px;
+            }
+            &::after  {
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: var(--color-text-highlight);
+                position: absolute;
+                bottom: 10px;
+                border-radius: 1px;
             }
         }
     }
