@@ -8,13 +8,13 @@
         <div class="font-text text text-cashprize">
             <p>Initialement de 1500 €, le cashprize total de l’événement s’élève désormais à <span>1780 €</span> et sera attribué à tous les joueurs ayant atteint les 16èmes de finale sur base de la répartition suivante :</p>
             <tbody>
-                <tr><td>1er</td><td>765 euros</td></tr>
-                <tr><td>2e</td><td>465 euros</td></tr>
-                <tr><td>3e</td><td>215 euros</td></tr>
-                <tr><td>4e</td><td>115 euros</td></tr>
-                <tr><td>5e-8e</td><td>15 euros / joueur</td></tr>
-                <tr><td>9e-16e</td><td>10 euros / joueur</td></tr>
-                <tr><td>17e-32e</td><td>5 euros / joueur</td></tr>
+                <tr><td>1er</td><td>765 €</td></tr>
+                <tr><td>2e</td><td>465 €</td></tr>
+                <tr><td>3e</td><td>215 €</td></tr>
+                <tr><td>4e</td><td>115 €</td></tr>
+                <tr><td>5e-8e</td><td>15 € / joueur</td></tr>
+                <tr><td>9e-16e</td><td>10 € / joueur</td></tr>
+                <tr><td>17e-32e</td><td>5 € / joueur</td></tr>
             </tbody>
         </div>
     </div>
@@ -32,6 +32,7 @@
             padding-top: 0.75em;
             padding-bottom: 2em;
             transition: .3s linear;
+            position: relative;
             &-cashprize{
                 height: 300px;
             }

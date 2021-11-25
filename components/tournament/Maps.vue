@@ -7,6 +7,7 @@
         </label>
         <div class="font-text text text-maps">
             <p>Toutes les informations concernant les maps pour le tournoi sont disponibles sur le <a class="discord" href="https://discord.gg/BankCjPtg2" target="_blank">discord de la compétition</a></p>
+            <p><span>Le nom du Map pack</span> pour avoir toutes les cartes en jeu est « Coupe de France 2021 – Map Pack »</p>
             <p>Aperçu des différentes cartes du tournois :</p>
             <div v-if="images.length > 0" class="map-container">
                 <a v-for="image in images" :key="image.pathLong" class="image-and-name" :href="`https://liquipedia.net/ageofempires/${image.name}`" target="_blank">
@@ -86,8 +87,9 @@ export default {
             padding-top: 0.75em;
             padding-bottom: 2em;
             transition: .3s linear;
+            position: relative;
             &-maps{
-                height: 870px;
+                height: 900px;
             }
             &::after  {
                 content: '';
@@ -95,7 +97,7 @@ export default {
                 height: 2px;
                 background-color: var(--color-text-highlight);
                 position: absolute;
-                bottom: 10px;
+                bottom: 5px;
                 border-radius: 1px;
             }
         }

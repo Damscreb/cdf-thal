@@ -29,6 +29,7 @@ export default {
             padding-top: 0.75em;
             padding-bottom: 2em;
             transition: .3s linear;
+            position: relative;
             &-players{
                 height: 480px;
             }

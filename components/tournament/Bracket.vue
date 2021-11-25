@@ -24,6 +24,7 @@
             padding-top: 0.75em;
             padding-bottom: 2em;
             transition: .3s linear;
+            position: relative;
             &-bracket{
                 height: 850px;
             }

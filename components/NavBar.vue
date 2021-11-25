@@ -3,6 +3,7 @@
         <Nuxt-Link exact-active-class="underline" to="/"><h3 class="font-text">Accueil</h3></Nuxt-Link>
         <Nuxt-Link exact-active-class="underline" to="/tournoi"><h3 class="font-text">Tournoi</h3></Nuxt-Link>
         <Nuxt-Link exact-active-class="underline" to="/thalounette"><h3 class="font-text">Thalounette</h3></Nuxt-Link>
+        <Nuxt-Link exact-active-class="underline" to="/équipe"><h3 class="font-text">L'équipe</h3></Nuxt-Link>
     </header>
 </template>
 <script>
