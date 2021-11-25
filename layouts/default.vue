@@ -40,6 +40,19 @@ export default {
     .font-text-light {
         font-family: "Roboto Light";
     }
+
+    a {
+        text-decoration: none;
+    }
+
+    input[type="checkbox"] ~ label svg {
+        transition: .3s ease-out;
+    }
+
+    input[type="checkbox"]:checked ~ label svg {
+        transition: .3s ease-in;
+        transform: rotate(90deg);
+    }
 </style>
 <style lang="scss" scoped>
     main {
