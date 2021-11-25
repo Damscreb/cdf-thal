@@ -7,15 +7,20 @@
         </label>
         <div class="font-text text text-cashprize">
             <p>Initialement de 1500 €, le cashprize total de l’événement s’élève désormais à <span>1780 €</span> et sera attribué à tous les joueurs ayant atteint les 16èmes de finale sur base de la répartition suivante :</p>
-            <tbody>
-                <tr><td>1er</td><td>765 €</td></tr>
-                <tr><td>2e</td><td>465 €</td></tr>
-                <tr><td>3e</td><td>215 €</td></tr>
-                <tr><td>4e</td><td>115 €</td></tr>
-                <tr><td>5e-8e</td><td>15 € / joueur</td></tr>
-                <tr><td>9e-16e</td><td>10 € / joueur</td></tr>
-                <tr><td>17e-32e</td><td>5 € / joueur</td></tr>
-            </tbody>
+            <table>
+                <thead>
+                    <tr><th>Position</th><td>Récompense</td></tr>
+                </thead>
+                <tbody>
+                    <tr><th>1er</th><td>765 €</td></tr>
+                    <tr><th>2e</th><td>465 €</td></tr>
+                    <tr><th>3e</th><td>215 €</td></tr>
+                    <tr><th>4e</th><td>115 €</td></tr>
+                    <tr><th>5e-8e</th><td>15 € / joueur</td></tr>
+                    <tr><th>9e-16e</th><td>10 € / joueur</td></tr>
+                    <tr><th>17e-32e</th><td>5 € / joueur</td></tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </template>
@@ -34,7 +39,7 @@
             transition: .3s linear;
             position: relative;
             &-cashprize{
-                height: 300px;
+                height: 350px;
             }
             &::after  {
                 content: '';
@@ -91,16 +96,27 @@
         }
     }
 
-    tbody {
+    table {
+        width: 50%;
+        margin-inline: auto;
+        margin-top: .8em;
+        border-collapse: collapse;
+    }
+
+    tbody, thead {
         margin-inline: auto;
         border-radius: 8px;
-        border: var(--color-text) 1px solid;
+        border: var(--color-text) 2px solid;
         overflow: hidden;
         width: max-content;
-        & td {
+        & td, & th {
             text-align: center;
-            padding: 0.4em 1em;
+            padding: 0.4em 0em;
             border: var(--color-text) 1px solid;
         }
+    }
+
+    tbody tr:nth-child(2n), thead {
+        background-color: var(--color-main-background-color);
     }
 </style>

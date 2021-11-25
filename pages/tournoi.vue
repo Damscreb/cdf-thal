@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tournament">
         <h1 class="font-title">TOUTES LES INFORMATIONS RELATIVES AU TOURNOI</h1>
         <div class="dropdown-menu">
             <GeneralInfos />

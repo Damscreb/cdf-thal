@@ -26,6 +26,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         border-radius: 15px 15px 0 0;
+        margin-top: auto;
         padding: 0 1em;
         flex-wrap: wrap;
     }

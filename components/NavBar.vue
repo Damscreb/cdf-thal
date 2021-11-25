@@ -17,6 +17,7 @@ export default {
         display: flex;
         flex-direction: row;
         border-radius: 15px;
+        margin-top: 1em;
         margin-bottom: 1.5em;
         padding: 0 0.5em;
     }

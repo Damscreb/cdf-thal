@@ -60,6 +60,6 @@ export default {
         max-width: 1200px;
         display: flex;
         flex-direction: column;
-        padding: 1.5em 0 0 0;
+        min-height: 100vh;
     }
 </style>
