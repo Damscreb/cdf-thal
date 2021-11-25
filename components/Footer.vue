@@ -1,15 +1,15 @@
 <template>
     <footer>
-        <a href="https://www.twitch.tv/thalounette">
+        <a class="link-twitch" href="https://www.twitch.tv/thalounette">
             <Font-awesome-icon class="icon twitch" :icon="['fab', 'twitch']" /><h3 class="font-text">Twitch</h3>
         </a>
-        <a href="https://www.youtube.com/channel/UCZxpgDdokrp3rjLxuM69pRA">
+        <a class="link-youtube" href="https://www.youtube.com/channel/UCZxpgDdokrp3rjLxuM69pRA">
             <Font-awesome-icon class="icon youtube" :icon="['fab', 'youtube']" /><h3 class="font-text">Youtube</h3>
         </a>
-        <a href="https://twitter.com/Thalounette_">
+        <a class="link-twitter" href="https://twitter.com/Thalounette_">
             <Font-awesome-icon class="icon twitter" :icon="['fab', 'twitter']" /><h3 class="font-text">Twitter</h3>
         </a>
-        <a href="https://discord.gg/BankCjPtg2">
+        <a class="link-discord" href="https://discord.gg/BankCjPtg2">
             <Font-awesome-icon class="icon discord" :icon="['fab', 'discord']" /><h3 class="font-text">Discord</h3>
         </a>
     </footer>
@@ -52,19 +52,19 @@ export default {
         font-size: 1.5em;
     }
 
-    .twitch, .twitch:hover ~ h3 {
+    .twitch, .link-twitch:hover h3 {
         color: #6441a5;
     }
 
-    .youtube, .youtube:hover ~ h3 {
+    .youtube, .link-youtube:hover h3 {
         color: #c4302b;
     }
 
-    .twitter, .twitter:hover ~ h3 {
+    .twitter, .link-twitter:hover h3 {
         color: #00acee;
     }
 
-    .discord, .discord:hover ~ h3 {
+    .discord, .link-discord:hover h3 {
         color: #738adb;
     }
 </style>

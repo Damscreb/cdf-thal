@@ -2,7 +2,7 @@
     <div>
         <img src="~/assets/image/Affiche_CDF.png" alt="Affiche du CDF">
         <div class="description">
-            <h2 class="font-title">COUPE DE FRANCE AoE2</h2>
+            <h2 class="font-title">UNE COUPE DE FRANCE AoE2</h2>
             <p class="font-text">
                 La <span>Coupe de France AoE II</span> est un tournoi sur des cartes aléatoires en 1V1organisé par <span>Thalounette</span>.
             </p>
@@ -13,7 +13,7 @@
         </div>
         <div class="description">
             <div class="font-title">
-                <h2>LES JOUEURS</h2>
+                <h2>DES JOUEURS</h2>
             </div>
         </div>
         <div class="players-display">

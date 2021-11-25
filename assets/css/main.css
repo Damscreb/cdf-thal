@@ -8,9 +8,14 @@
     src: url(../font/Roboto/Roboto-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+
 :root {
     --color-black: #050605;
     --color-main-background-color: #151615;
-    --color-text: #fff;
+    --color-text: rgb(243, 240, 225);
     --color-text-highlight: #2365e9;
 }

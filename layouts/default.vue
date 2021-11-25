@@ -36,6 +36,10 @@ export default {
     .font-text{
         font-family: "Roboto";
     }
+
+    .font-text-light {
+        font-family: "Roboto Light";
+    }
 </style>
 <style lang="scss" scoped>
     main {
