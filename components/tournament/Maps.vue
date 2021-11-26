@@ -61,11 +61,20 @@ export default {
         margin: 0.5em 0;
         color: var(--color-text);
         transition: .2s linear;
+        background-color: var(--color-black);
+        border-radius: 15px;
+        border: 1.5px transparent solid;
         &:hover {
+            object-fit:cover;
             text-decoration: none;
             cursor: pointer;
             color: var(--color-text-highlight);
+            transform: scale(1.5);
             transition: .2s linear;
+            border: 1.5px var(--color-text-highlight) solid;
+        }
+        & h3 {
+            padding: 0.5em 0 0 0.5em;
         }
     }
 
@@ -89,7 +98,8 @@ export default {
             transition: .3s linear;
             position: relative;
             &-maps{
-                height: 900px;
+                height: 930px;
+                overflow: visible;
             }
             &::after  {
                 content: '';
@@ -101,29 +111,6 @@ export default {
                 border-radius: 1px;
             }
         }
-    }
-
-    .icon-format {
-        font-size: 1.3em;
-        color: var(--color-text-highlight);
-    }
-
-    label {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        &:hover{
-            cursor: pointer;
-            & h2 {
-                color: var(--color-text-highlight);
-                transition: .1s ease-in-out;
-            }
-        }
-    }
-
-    h2 {
-        color: var(--color-text);
-        transition: .1s ease-in-out;
     }
 
     .text {

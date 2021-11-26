@@ -1,19 +1,27 @@
 <template>
-    <div>
+    <div id="player-div">
         <input id="player" type="checkbox">
         <label for="player">
             <h2 class="font-title">LES JOUEURS</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
-        <div class="font-text text text-players">
-            <PlayerList />
+        <div class="font-text text text-players players-display">
+            <Player v-for="player in players" :key="player.name" :name="player.name" :avatar="player.avatar" />
         </div>
     </div>
 </template>
 <script>
-import PlayerList from '~/components/utils/PlayerList.vue'
+import Player from '~/components/Player.vue'
 export default {
-    'components': {PlayerList}
+    'components': {Player},
+    data () {
+        return {
+            'players': []
+        }
+    },
+    mounted () {
+        this.players = this.$getPlayerData();
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -26,47 +34,25 @@ export default {
             line-height: 130%;
         }
         &:checked ~ .text {
-            padding-top: 0.75em;
+            margin-top: 1em;
             padding-bottom: 2em;
             transition: .3s linear;
             position: relative;
             &-players{
                 height: 480px;
-            }
-            &::after  {
-                content: '';
-                width: 100%;
-                height: 2px;
-                background-color: var(--color-text-highlight);
-                position: absolute;
-                bottom: 10px;
-                border-radius: 1px;
-            }
-        }
-    }
-
-    .icon-format {
-        cursor: pointer;
-        font-size: 1.3em;
-        color: var(--color-text-highlight);
-    }
-
-    label {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        &:hover{
-            cursor: pointer;
-            & h2 {
-                color: var(--color-text-highlight);
-                transition: .1s ease-in-out;
+                overflow-y: scroll;
+                &::after  {
+                    content: '';
+                    display:inline-block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--color-text-highlight);
+                    bottom: -32px;
+                    border-radius: 1px;
+                    position: relative;
+                }
             }
         }
-    }
-
-    h2 {
-        color: var(--color-text);
-        transition: .1s ease-in-out;
     }
 
     .text {
@@ -87,5 +73,18 @@ export default {
         & a:hover {
             text-decoration: underline;
         }
+    }
+
+    .players-display {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 800px;
+        overflow-y: scroll;
+        background-color: var(--color-main-background-color);
+        border-radius: 15px;
+        scrollbar-color: var(--color-text-highlight) var(--color-main-background-color);
     }
 </style>

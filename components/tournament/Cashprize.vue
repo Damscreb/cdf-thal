@@ -53,29 +53,6 @@
         }
     }
 
-    .icon-format {
-        font-size: 1.3em;
-        color: var(--color-text-highlight);
-    }
-
-    label {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        &:hover{
-            cursor: pointer;
-            & h2 {
-                color: var(--color-text-highlight);
-                transition: .1s ease-in-out;
-            }
-        }
-    }
-
-    h2 {
-        color: var(--color-text);
-        transition: .1s ease-in-out;
-    }
-
     .text {
         height: 0px;
         display: flex;

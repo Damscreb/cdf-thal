@@ -6,7 +6,10 @@
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
         <div class="font-text text text-infos">
-            <p>La Coupe de France AoE II est un <span>tournoi RM 1V1</span> qui se tient du 15 novembre au 19 décembre et dont l’objectif est de déterminer le meilleur joueur francophone de l’année 2021.</p>
+            <div class='img-text'>
+                <img src='~/assets/image/Logo_CDF.png' alt="Logo du tournoi" />
+                <p>La Coupe de France AoE II est un <span>tournoi RM 1V1</span> qui se tient du 15 novembre au 19 décembre et dont l’objectif est de déterminer le meilleur joueur francophone de l’année 2021.</p>
+            </div>
             <p>Si la majorité des événements compétitifs d’AoE  2 se présente sous un format opposant des joueurs d’un niveau très proche, ce format de coupe permettra d’<span>inclure un grand nombre de joueurs de niveaux disparates</span>.  A ce titre, seuls les joueurs ayant la meilleure préparation et la plus grande constance parviendront à aller loin dans la compétition et ce que ces derniers soient considérés comme outsiders ou comme favoris.</p>
             <p>La Coupe de France AoE II compte 128 places et si l’inscription est <span>ouverte à tous les elos</span>, seuls les 128 joueurs ayant l’elo max RM le plus élevé pourront participer.</p>
             <p>Le tournoi se décompose en <span>deux phases principales</span> :</p>
@@ -31,7 +34,7 @@
             transition: .3s linear;
             position: relative;
             &-infos{
-                height: 360px;
+                height: 390px;
             }
             &::after  {
                 content: '';
@@ -45,27 +48,14 @@
         }
     }
 
-    .icon-format {
-        font-size: 1.3em;
-        color: var(--color-text-highlight);
-    }
-
-    label {
+    .img-text {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        &:hover{
-            cursor: pointer;
-            & h2 {
-                color: var(--color-text-highlight);
-                transition: .1s ease-in-out;
-            }
+        align-items: center;
+        & img {
+            width: 70px;
+            height: 70px;
+            float: left;
         }
-    }
-
-    h2 {
-        color: var(--color-text);
-        transition: .1s ease-in-out;
     }
 
     .text {

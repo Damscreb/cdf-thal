@@ -18,4 +18,26 @@
     --color-main-background-color: #151615;
     --color-text: rgb(243, 240, 225);
     --color-text-highlight: #2365e9;
+    --middle-size: 500px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+label:hover h2 {
+    color: var(--color-text-highlight);
+    transition: .1s ease-in-out;
+}
+
+.icon-format {
+    cursor: pointer;
+    font-size: 1.3em;
+    color: var(--color-text-highlight);
 }

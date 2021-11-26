@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="players-display">
-            <Player v-for="joueur in joueurs" :key="joueur.name" :name="joueur.name" :avatar="joueur.avatar" />
+            <Player v-for="player in players" :key="player.name" :name="player.name" :avatar="player.avatar" />
         </div>
     </div>
 </template>
@@ -27,45 +27,11 @@ export default {
     'components': {Player},
     data () {
         return {
-            'joueurs': [
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/15/05/52/red-fox-6796430_960_720.jpg',
-                    'name': 'Elunnor'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/18/22/17/butterfly-6807529_960_720.jpg',
-                    'name': 'Thalounette'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/05/23/00/21/woman-6274879_960_720.png',
-                    'name': 'Elhyar'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2020/06/10/02/22/caricature-5280770_960_720.jpg',
-                    'name': 'Melo'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/08/26/15/39/cat-6576397_960_720.jpg',
-                    'name': 'Aramatu'
-                },
-                {
-                    'avatar': 'https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-21.png',
-                    'name': 'Sus'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2018/11/19/05/53/animal-3824672_960_720.jpg',
-                    'name': 'MisterLu'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2020/07/10/19/07/she-5391770_960_720.jpg',
-                    'name': 'Clem'
-                },
-                {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/15/21/39/rose-6799477_960_720.jpg',
-                    'name': 'Une jolie Rose Blanche'
-                }
-            ]
+            'players': []
         }
+    },
+    mounted () {
+        this.players = this.$getPlayerData();
     }
 }
 </script>
@@ -115,6 +81,17 @@ export default {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
+        height: 800px;
+        overflow-y: scroll;
+        scrollbar-color: var(--color-text-highlight) var(--color-main-background-color);
         margin-bottom: 2.5em;
+    }
+
+    @media all and (max-width: 500px){
+        .players-display {
+            border-top: 2px var(--color-text-highlight) solid;
+            border-bottom: 2px var(--color-text-highlight) solid;
+            height: 500px;
+        }
     }
 </style>

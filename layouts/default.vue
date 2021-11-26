@@ -56,10 +56,12 @@ export default {
 </style>
 <style lang="scss" scoped>
     main {
-        margin: auto;
-        max-width: 1200px;
         display: flex;
         flex-direction: column;
+        margin: auto;
+        margin-top: 6em;
+        max-width: 1200px;
+        width: 100%;
         min-height: 100vh;
     }
 </style>

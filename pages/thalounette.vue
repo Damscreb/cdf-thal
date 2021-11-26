@@ -15,7 +15,7 @@
         <div>
             <h2 class="font-title">Description :</h2>
             <p class="font-text">Que ce soient des tutos, des interviews ou encore des casts de tournoi, Thalounette est sur tous les fronts!</p>
-            <p class="font-text">Se situant plus dans le divertissement que dans un niveau exceptionnel, elle saura vous faire rire dans n'importe quelle situation.</p>
+            <p class="font-text">Se situant plus dans le <span>divertissement</span> que dans un niveau exceptionnel, elle saura vous faire rire dans n'importe quelle situation.</p>
             <p class="font-text">Retrouvez ici la vidéo du cast de son dernier tournoi caritatif, <span>L'Endowar</span>, organisé par Elhyar.</p>
         </div>
         <div class="iframe">

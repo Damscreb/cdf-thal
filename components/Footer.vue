@@ -68,4 +68,16 @@ export default {
     .discord, .link-discord:hover h3 {
         color: #738adb;
     }
+
+    @media all and (max-width: 500px){
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        a {
+            margin-inline: 0.2em;
+            justify-content: center;
+        }
+    }
 </style>

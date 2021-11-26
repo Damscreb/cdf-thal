@@ -26,15 +26,15 @@ export default {
     .joueur {
         display: flex;
         flex-direction: column;
-        width: 160px;
-        height: 200px;
+        width: 150px;
+        height: 190px;
         background-color: var(--color-black);
-        border-radius: 25px;
+        border-radius: 20px;
         overflow: hidden;
-        margin: 1em 0.5em;
-            transition: 0.2s ease-in-out;
+        margin: 0.5em;
+        transition: 0.2s ease-in-out;
         & img {
-            border-radius: 25px;
+            border-radius: inherit;
             width: 100%;
             height: 80%;
         }
@@ -51,8 +51,24 @@ export default {
             }
         }
         &:hover {
-            transform: scale(1.1);
-            transition: 0.2s ease-in-out;
+            background-color: var(--color-text-highlight);
+        }
+    }
+
+    @media all and (max-width: 500px){
+        .joueur {
+            width: 108px;
+            height: 140px;
+            border-radius: 12px;
+            & .name {
+                height: 23%;
+                & h4 {
+                    width: inherit;
+                    font-size: 0.8em;
+                    padding: 0.1em 0;
+                    text-overflow: ellipsis;
+                }
+            }
         }
     }
 </style>

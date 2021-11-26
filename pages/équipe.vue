@@ -5,12 +5,12 @@
             <h2 class="font-title">PRÉSENTATION DE L'ÉQUIPE DE LA COUPE DE FRANCE AoE2</h2>
             <div class="presentation font-text">
                 <div>
-                    <h3 class="font-title">Sponsor :</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1FA99;</p> Sponsor:</h3>
                     <p>Ausitin</p>
                 </div>
 
                 <div>
-                    <h3 class="font-title">Organisateur-trice-s :</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4DA;</p> Organisateur-trice-s:</h3>
                     <p>Thalounette (Host)</p>
                     <p>Ausitin</p>
                     <p>Aramatu</p>
@@ -19,7 +19,7 @@
                 </div>
 
                 <div>
-                    <h3 class="font-title">Administrateur-trice-s :</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4DD;</p> Administrateur-trice-s:</h3>
                     <p>DaisyChain</p>
                     <p>D.C.A</p>
                     <p>Edowyth</p>
@@ -30,20 +30,20 @@
                 </div>
 
                 <div>
-                    <h3 class="font-title">Choix des cartes :</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4CD;</p> Choix des cartes:</h3>
                     <p>Miaou</p>
-                    <p>Wolf Silver</p>
                     <p>Phare_Macie</p>
+                    <p>Wolf Silver</p>
                 </div>
 
                 <div>
-                    <h3 class="font-title">Consultants :</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4DE;</p> Consultants:</h3>
                     <p>Margougou</p>
                     <p>Sitaux</p>
                 </div>
 
                 <div>
-                    <h3 class="font-title">Développeur Web :</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4BB;</p> Développeurs Web:</h3>
                     <p>Elunnor</p>
                     <p>le_chaton</p>
                 </div>
@@ -71,6 +71,18 @@
     h3 {
         color: var(--color-text-highlight);
         margin-bottom: 1em;
+        max-width: 100%;
+        width: max-content;
+        display: flex;
+        align-items: center;
+        word-wrap: break-word;
+    }
+
+    p.emoji {
+        font-size: 25px;
+        margin-bottom: 0;
+        margin-right: 0.25em;
+        display: inline;
     }
 
     img {
@@ -105,13 +117,14 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        & div {
+        & > div {
             margin: 1em 2em;
             text-align: left;
             width: 20%;
             background-color: var(--color-black);
             border-radius: 15px;
             padding: 1em;
+            word-wrap: break-word;
         }
         & h3 {
             position: relative;
