@@ -59,6 +59,11 @@ export default {
     'nuxt-fontawesome',
   ],
 
+  target: 'static',
+  router: {
+    base: '/cdf-thal/'
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
