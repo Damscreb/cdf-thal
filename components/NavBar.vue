@@ -27,6 +27,7 @@ export default {
 <style scoped lang="scss">
     nav {
         position: fixed;
+        z-index: 5;
         top: 15px;
         background-color: var(--color-black);
         border-radius: 15px;

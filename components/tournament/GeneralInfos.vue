@@ -29,20 +29,24 @@
             line-height: 130%;
         }
         &:checked ~ .text {
-            padding-top: 0.75em;
-            padding-bottom: 2em;
+            padding: 0.75em 0.75em 2em 0;
             transition: .3s linear;
             position: relative;
+            overflow-y: scroll;
             &-infos{
                 height: 390px;
             }
-            &::after  {
+            & p:last-child {
+                position: relative;
+            }
+            & > p:last-child::after {
                 content: '';
                 width: 100%;
                 height: 2px;
                 background-color: var(--color-text-highlight);
                 position: absolute;
-                bottom: 10px;
+                left: 0;
+                bottom: -25px;
                 border-radius: 1px;
             }
         }
@@ -64,8 +68,10 @@
         flex-direction: column;
         letter-spacing: 0.5px;
         text-align: justify;
-        & p:not(:last-child) {
-            margin-bottom: .5em;
+        & p {
+            &:not(:last-child) {
+                margin-bottom: .5em;
+            }
         }
         & span, a {
             color: var(--color-text-highlight)

@@ -18,13 +18,16 @@
     --color-main-background-color: #151615;
     --color-text: rgb(243, 240, 225);
     --color-text-highlight: #2365e9;
+    --big-size: 900px;
     --middle-size: 500px;
+    --little-size: 450px;
 }
 
 label {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 label:hover{
@@ -40,4 +43,15 @@ label:hover h2 {
     cursor: pointer;
     font-size: 1.3em;
     color: var(--color-text-highlight);
+}
+
+@media all and (max-width: 500px){
+    label h2 {
+        font-size: 1.3em;
+    }
+
+    .text {
+        letter-spacing: initial;
+        font-size: 0.9em;
+    }
 }

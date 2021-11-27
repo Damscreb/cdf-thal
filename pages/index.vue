@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <img src="~/assets/image/Affiche_CDF.png" alt="Affiche du CDF">
         <div class="description">
             <h2 class="font-title">UNE COUPE DE FRANCE AoE2</h2>
@@ -52,6 +52,10 @@ export default {
         font-size: 1.1em;
     }
 
+    .main {
+        margin-top: 7em;
+    }
+
     img {
         width: 100%;
         border-radius: 15px;
@@ -79,7 +83,7 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         height: 800px;
         overflow-y: scroll;

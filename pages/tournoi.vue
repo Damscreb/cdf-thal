@@ -27,12 +27,17 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    .tournament {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     h1 {
         position: relative;
         text-align: center;
         text-decoration: underline;
-        width: max-content;
-        margin: 0.5em auto 1.5em auto;
+        margin: 4em 0 1.5em 0;
         &::after, &::before {
             display: block;
             content: '';
@@ -62,6 +67,14 @@ export default {
         margin-bottom: 2em;
         & div:not(:last-child) {
             margin-bottom: 1em;
+        }
+    }
+
+    @media all and (max-width: 500px){
+        .players-display {
+            border-top: 2px var(--color-text-highlight) solid;
+            border-bottom: 2px var(--color-text-highlight) solid;
+            height: 500px;
         }
     }
 </style>

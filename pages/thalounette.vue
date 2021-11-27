@@ -2,24 +2,24 @@
     <div class="description">
         <img src="~/assets/image/Affiche_CDF.png" alt="Affiche du CDF">
         <a class="font-title">Live de Thalounette</a>
-        <div>
+        <div class="thalounette-text">
             <h2 class="font-title">Bio :</h2>
             <p class="font-text">J'aime les jeux vidéos et les <span>pâtes à la carbonara</span>. Je joue principalement à Age Of Empires.</p>
             <p class="font-text">If you don't speak French, feel free to speak English in the chat.</p>
             <p class="font-text"><span>Email : luniversdethal@gmail.com</span></p>
         </div>
         <div class="iframe">
-            <iframe src="https://player.twitch.tv/?channel=Thalounette&parent=localhost:3000&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="600" width="80%" />
+            <iframe src="https://player.twitch.tv/?channel=Thalounette&parent=localhost:3000&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
         </div>
         <a class="font-title">Chaine Youtube de Thalounette</a>
-        <div>
+        <div class="thalounette-text">
             <h2 class="font-title">Description :</h2>
             <p class="font-text">Que ce soient des tutos, des interviews ou encore des casts de tournoi, Thalounette est sur tous les fronts!</p>
             <p class="font-text">Se situant plus dans le <span>divertissement</span> que dans un niveau exceptionnel, elle saura vous faire rire dans n'importe quelle situation.</p>
             <p class="font-text">Retrouvez ici la vidéo du cast de son dernier tournoi caritatif, <span>L'Endowar</span>, organisé par Elhyar.</p>
         </div>
         <div class="iframe">
-            <iframe width="80%" height="500" src="https://www.youtube.com/embed/ZVTYBH27h3I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
+            <iframe width="80%" height="500px" src="https://www.youtube.com/embed/ZVTYBH27h3I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
         </div>
     </div>
 </template>
@@ -28,8 +28,7 @@
         display:flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 1em;
-        margin-inline: auto;
+        margin: 6em auto 1em auto;
         width: 100%;
     }
 
@@ -77,6 +76,12 @@
         color: var(--color-text-highlight);
         &:hover {
             cursor: inherit;
+        }
+    }
+
+    @media all and (max-width:500px) {
+        .thalounette-text {
+            padding: 0 1em;
         }
     }
 </style>

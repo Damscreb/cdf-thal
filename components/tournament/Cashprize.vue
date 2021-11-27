@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div class="cashprize-container">
         <input id="cashprize" type="checkbox">
         <label for="cashprize">
             <h2 class="font-title">LE CASHPRIZE</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
         <div class="font-text text text-cashprize">
-            <p>Initialement de 1500 €, le cashprize total de l’événement s’élève désormais à <span>1780 €</span> et sera attribué à tous les joueurs ayant atteint les 16èmes de finale sur base de la répartition suivante :</p>
+            <p>Initialement de 1500€, le cashprize total de l’événement s’élève désormais à <span>1780€</span> et sera attribué à tous les joueurs ayant atteint les 16èmes de finale sur base de la répartition suivante :</p>
             <table>
                 <thead>
                     <tr><th>Position</th><td>Récompense</td></tr>
@@ -34,20 +34,21 @@
             line-height: 130%;
         }
         &:checked ~ .text {
-            padding-top: 0.75em;
-            padding-bottom: 2em;
+            padding: 0.75em 0.75em 2em 0;
             transition: .3s linear;
             position: relative;
+            overflow-y: scroll;
             &-cashprize{
                 height: 350px;
             }
-            &::after  {
+            & table::after {
                 content: '';
                 width: 100%;
                 height: 2px;
                 background-color: var(--color-text-highlight);
                 position: absolute;
-                bottom: 10px;
+                left: 0;
+                bottom: -56px;
                 border-radius: 1px;
             }
         }
@@ -95,5 +96,12 @@
 
     tbody tr:nth-child(2n), thead {
         background-color: var(--color-main-background-color);
+    }
+
+
+    @media all and (max-width: 500px){
+        table {
+            width: 90%;
+        }
     }
 </style>

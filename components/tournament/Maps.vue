@@ -55,6 +55,7 @@ export default {
         justify-content: space-around;
         flex-wrap: wrap;
         padding: 0 0.5em;
+        overflow-y: scroll;
     }
 
     .image-and-name {
@@ -98,7 +99,7 @@ export default {
             transition: .3s linear;
             position: relative;
             &-maps{
-                height: 930px;
+                height: 985px;
                 overflow: visible;
             }
             &::after  {
@@ -133,6 +134,22 @@ export default {
         }
         & .discord {
             color: var(--color-text-highlight);
+        }
+    }
+
+    @media all and (max-width: 500px) {
+        input[type="checkbox"]:checked ~ .text-maps{
+            height: 700px;
+        }
+
+        .map-container {
+            padding-bottom: 2em;
+        }
+
+        .image-and-name {
+            &:hover {
+                transform: scale(1);
+            }
         }
     }
 </style>

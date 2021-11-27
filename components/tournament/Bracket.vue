@@ -21,8 +21,7 @@
             line-height: 130%;
         }
         &:checked ~ .text {
-            padding-top: 0.75em;
-            padding-bottom: 2em;
+            padding: 0.75em 0.75em 2em 0;
             transition: .3s linear;
             position: relative;
             &-bracket{
@@ -57,6 +56,12 @@
         }
         & a:hover {
             text-decoration: underline;
+        }
+    }
+
+    @media all and (max-width: 500px) {
+        input[type="checkbox"]:checked ~ .text-bracket {
+            height: 500px;
         }
     }
 </style>

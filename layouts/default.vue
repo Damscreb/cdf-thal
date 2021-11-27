@@ -59,7 +59,6 @@ export default {
         display: flex;
         flex-direction: column;
         margin: auto;
-        margin-top: 6em;
         max-width: 1200px;
         width: 100%;
         min-height: 100vh;

@@ -57,8 +57,9 @@ export default {
 
     @media all and (max-width: 500px){
         .joueur {
-            width: 108px;
+            width: 105px;
             height: 140px;
+            margin: 0.5em 0.3em;
             border-radius: 12px;
             & .name {
                 height: 23%;
