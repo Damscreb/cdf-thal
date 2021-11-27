@@ -53,7 +53,7 @@ export default {
     }
 
     .main {
-        margin-top: 7em;
+        margin-top: 1em;
     }
 
     img {

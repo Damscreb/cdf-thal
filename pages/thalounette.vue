@@ -28,7 +28,7 @@
         display:flex;
         flex-direction: column;
         text-align: center;
-        margin: 6em auto 1em auto;
+        margin: 2em auto 1em auto;
         width: 100%;
     }
 

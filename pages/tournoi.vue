@@ -37,7 +37,7 @@ export default {
         position: relative;
         text-align: center;
         text-decoration: underline;
-        margin: 4em 0 1.5em 0;
+        margin: 2em 0 1.5em 0;
         &::after, &::before {
             display: block;
             content: '';

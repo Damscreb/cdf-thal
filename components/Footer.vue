@@ -73,6 +73,7 @@ export default {
         footer {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            padding-bottom: 60px;
         }
 
         a {

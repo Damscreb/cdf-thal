@@ -10,7 +10,7 @@
                 <h3 class="font-text">Tournoi</h3>
             </Nuxt-Link>
             <Nuxt-Link exact-active-class="underline" to="/thalounette">
-                <Font-awesome-icon class="icon" :icon="['fas', 'hashtag']" />
+                <Font-awesome-icon class="icon" :icon="['fas', 'female']" />
                 <h3 class="font-text">Thalounette</h3>
             </Nuxt-Link>
             <Nuxt-Link exact-active-class="underline" to="/équipe">
@@ -28,7 +28,7 @@ export default {
     nav {
         position: fixed;
         z-index: 5;
-        top: 15px;
+        bottom: 0px;
         background-color: var(--color-black);
         border-radius: 15px;
         width: inherit;
@@ -95,6 +95,10 @@ export default {
     }
 
     @media all and (max-width: 500px){
+        nav {
+            border-radius: 0;
+        }
+
         .nav-responsive {
             display: flex;
             flex-direction: row;
