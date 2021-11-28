@@ -58,9 +58,17 @@ export default {
     main {
         display: flex;
         flex-direction: column;
+        padding-top: 5em;
         margin: auto;
         max-width: 1200px;
         width: 100%;
-        min-height: 100vh;
+        min-height: 91.5vh;
+    }
+
+    @media all and (max-width: 500px) {
+        main {
+            padding-top: 0em;
+            min-height: 100vh;
+        }
     }
 </style>

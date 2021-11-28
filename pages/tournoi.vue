@@ -70,11 +70,24 @@ export default {
         }
     }
 
+    @media all and (max-width: 1100px){
+        h1 {
+            &::after, &::before {
+                display:none;
+            }
+        }
+    }
+
     @media all and (max-width: 500px){
         .players-display {
             border-top: 2px var(--color-text-highlight) solid;
             border-bottom: 2px var(--color-text-highlight) solid;
             height: 500px;
+        }
+
+        .dropdown-menu {
+            padding: 1em;
+            margin-inline: 0.3em;
         }
     }
 </style>

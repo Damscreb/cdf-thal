@@ -48,7 +48,7 @@
                 background-color: var(--color-text-highlight);
                 position: absolute;
                 left: 0;
-                bottom: -56px;
+                bottom: -30px;
                 border-radius: 1px;
             }
         }

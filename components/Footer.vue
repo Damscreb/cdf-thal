@@ -74,6 +74,7 @@ export default {
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding-bottom: 60px;
+            border-radius: 0;
         }
 
         a {

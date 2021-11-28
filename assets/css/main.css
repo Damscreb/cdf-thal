@@ -18,9 +18,9 @@
     --color-main-background-color: #151615;
     --color-text: rgb(243, 240, 225);
     --color-text-highlight: #2365e9;
-    --big-size: 900px;
-    --middle-size: 500px;
-    --little-size: 450px;
+    --big-size: 1100px;
+    --middle-size: 700px;
+    --little-size: 500px;
 }
 
 label {

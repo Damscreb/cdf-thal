@@ -50,12 +50,10 @@ export default {
 </script>
 <style lang="scss" scoped>
     .map-container {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         padding: 0 0.5em;
-        overflow-y: scroll;
     }
 
     .image-and-name {
@@ -65,6 +63,9 @@ export default {
         background-color: var(--color-black);
         border-radius: 15px;
         border: 1.5px transparent solid;
+        padding: 0 10px;
+        width: max-content;
+        margin-inline: auto;
         &:hover {
             object-fit:cover;
             text-decoration: none;
@@ -82,7 +83,7 @@ export default {
     img {
         width: 250px;
         height: 150px;
-        margin: 0.5em;
+        margin: 0.5em 0;
     }
 
     input[type="checkbox"] {
@@ -99,7 +100,7 @@ export default {
             transition: .3s linear;
             position: relative;
             &-maps{
-                height: 985px;
+                height: 1200px;
                 overflow: visible;
             }
             &::after  {
@@ -137,18 +138,41 @@ export default {
         }
     }
 
-    @media all and (max-width: 500px) {
-        input[type="checkbox"]:checked ~ .text-maps{
-            height: 700px;
-        }
-
+    @media all and (max-width: 1100px) {
         .map-container {
             padding-bottom: 2em;
+            overflow-y: scroll;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            padding: 0 0.5em;
+        }
+
+        input[type="checkbox"]:checked ~ .text-maps{
+            height: 650px;
         }
 
         .image-and-name {
             &:hover {
                 transform: scale(1);
+            }
+        }
+    }
+
+    @media all and (max-width: 700px) {
+        .map-container {
+            height: auto;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(14, 1fr);
+            grid-row-gap: 15px;
+        }
+
+        .image-and-name {
+            width: 90%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 80%;
+                margin: 0.2em 0 0.5em 0;
             }
         }
     }

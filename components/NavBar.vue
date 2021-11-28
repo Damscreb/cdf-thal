@@ -27,9 +27,10 @@ export default {
 <style scoped lang="scss">
     nav {
         position: fixed;
+        top: 15px;
         z-index: 5;
-        bottom: 0px;
         background-color: var(--color-black);
+        box-shadow: inset 0 0 0 2px var(--color-text-highlight);
         border-radius: 15px;
         width: inherit;
         max-width: inherit;
@@ -97,6 +98,10 @@ export default {
     @media all and (max-width: 500px){
         nav {
             border-radius: 0;
+            border: none;
+            bottom: 0px;
+            top: unset;
+            box-shadow: inset 0 10px 10px -7px var(--color-text-highlight);
         }
 
         .nav-responsive {

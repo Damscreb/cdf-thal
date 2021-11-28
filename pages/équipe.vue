@@ -5,7 +5,7 @@
             <h2 class="font-title">PRÉSENTATION DE L'ÉQUIPE DE LA COUPE DE FRANCE AoE2</h2>
             <div class="presentation font-text">
                 <div class="sponsor">
-                    <h3 class="font-title"><p class='emoji'>&#x1FA99;</p> Sponsor:</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4B0;</p> Sponsor:</h3>
                     <div>
                         <p>Ausitin</p>
                     </div>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="consulting">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4DE;</p> Consultants:</h3>
+                    <h3 class="font-title"><p class='emoji'>&#x1F4A1;</p> Consultants:</h3>
                     <div class="username">
                         <p>Margougou</p>
                         <p>Sitaux</p>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="dev">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4BB;</p> Développeurs Web:</h3>
+                    <h3 class="font-title"><p class='emoji'>&#128187;</p> Développeurs Web:</h3>
                     <div class="username">
                         <p>Elunnor</p>
                         <p>le_chaton</p>
