@@ -62,7 +62,7 @@ export default {
         margin: auto;
         max-width: 1200px;
         width: 100%;
-        min-height: 91.5vh;
+        min-height: 91.6vh;
     }
 
     @media all and (max-width: 500px) {

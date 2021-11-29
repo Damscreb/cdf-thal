@@ -1,19 +1,19 @@
 <template>
     <div class="description">
         <img src="~/assets/image/Affiche_CDF.png" alt="Affiche du CDF">
-        <a class="font-title">Live de Thalounette</a>
+        <a class="font-title"><span>Live de Thalounette</span></a>
         <div class="thalounette-text">
-            <h2 class="font-title">Bio :</h2>
+            <h2 class="font-title"><span>Bio :</span></h2>
             <p class="font-text">J'aime les jeux vidéos et les <span>pâtes à la carbonara</span>. Je joue principalement à Age Of Empires.</p>
             <p class="font-text">If you don't speak French, feel free to speak English in the chat.</p>
             <p class="font-text"><span>Email : luniversdethal@gmail.com</span></p>
         </div>
         <div class="iframe">
-            <iframe src="https://player.twitch.tv/?channel=Thalounette&damscreb.github.io&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
+            <iframe src="https://player.twitch.tv/?channel=Thalounette&'damscreb.github.io'&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
         </div>
-        <a class="font-title">Chaine Youtube de Thalounette</a>
+        <a class="font-title"><span>Chaine Youtube de Thalounette</span></a>
         <div class="thalounette-text">
-            <h2 class="font-title">Description :</h2>
+            <h2 class="font-title"><span>Description :</span></h2>
             <p class="font-text">Que ce soient des tutos, des interviews ou encore des casts de tournoi, Thalounette est sur tous les fronts!</p>
             <p class="font-text">Se situant plus dans le <span>divertissement</span> que dans un niveau exceptionnel, elle saura vous faire rire dans n'importe quelle situation.</p>
             <p class="font-text">Retrouvez ici la vidéo du cast de son dernier tournoi caritatif, <span>L'Endowar</span>, organisé par Elhyar.</p>

@@ -17,11 +17,14 @@
                 <Font-awesome-icon class="icon" :icon="['fas', 'users']" />
                 <h3 class="font-text">L'équipe</h3>
             </Nuxt-Link>
+            <SwitchTheme />
         </div>
     </nav>
 </template>
 <script>
+import SwitchTheme from '~/components/SwitchTheme.vue'
 export default {
+    'components': {SwitchTheme}
 }
 </script>
 <style scoped lang="scss">
@@ -38,6 +41,7 @@ export default {
         & > .nav-responsive {
             display: flex;
             flex-direction: row;
+            align-items: center;
             height: 100%;
             padding: 0 1em;
         }
@@ -113,7 +117,7 @@ export default {
         a {
             & .icon {
                 display: initial;
-                margin-inline: 1em;
+                margin-inline: 0.5em;
             }
             & h3 {
                 display: none;
