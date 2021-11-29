@@ -12,8 +12,7 @@ $ npm run dev
 # build for production and posting on gh pages
 $ npm run deploy
 
-# Last thing to do is to create an empty file on the branch gh-pages and a gitignore for useless things (just keep _nuxt directory)
-$ .nojekyll
+# Last thing to do is to add files from branch files_to_add into gh-pages
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
