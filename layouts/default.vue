@@ -1,27 +1,28 @@
 <template>
     <main>
-        <NavBar />
-        <Nuxt />
-        <Footer />
+        <NavBar/>
+        <Nuxt/>
+        <Footer/>
     </main>
 </template>
 <script>
-import Footer from '~/components/Footer.vue'
-import NavBar from '~/components/NavBar.vue'
+import Footer from '~/components/Footer.vue';
+import NavBar from '~/components/NavBar.vue';
+
 export default {
-    'components': {
+    components: {
         Footer,
-        NavBar
-    }
-}
+        NavBar,
+    },
+};
 </script>
 <style lang="scss">
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
 
-    html, body{
+    html, body {
         height: auto;
     }
 
@@ -29,11 +30,11 @@ export default {
         background-color: var(--color-main-background-color);
     }
 
-    .font-title{
+    .font-title {
         font-family: "Inter Bold";
     }
 
-    .font-text{
+    .font-text {
         font-family: "Inter";
     }
 
