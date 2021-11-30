@@ -3,7 +3,6 @@
         {{ this.name }}
     </div>
 </template>
-
 <script>
 export default {
     asyncData(ctx) {
@@ -14,7 +13,6 @@ export default {
     name: 'cast',
 };
 </script>
-
 <style scoped>
 
 </style>
