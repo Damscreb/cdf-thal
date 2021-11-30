@@ -19,16 +19,16 @@ export default {
         switchMode () {
             if (this.lightOrDark === false) {
                 localStorage.setItem('lightOrDark', true)
-                this.$root.$el.parentElement.classList.add('light-theme')
+                document.querySelector('body').classList.add('light-theme')
             } else {
                 localStorage.setItem('lightOrDark', false)
-                this.$root.$el.parentElement.classList.remove('light-theme')
+                document.querySelector('body').classList.remove('light-theme')
             }
         }
     },
     mounted () {
         if (localStorage.getItem('lightOrDark') === 'true') {
-            this.$root.$el.parentElement.classList.add('light-theme')
+            document.querySelector('body').classList.add('light-theme')
             this.lightOrDark = true
         } else {
             this.lightOrDark = false
