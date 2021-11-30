@@ -14,3 +14,7 @@ $vs-state-active-color: var(--color-text-highlight);
 .vs__dropdown-option {
     color: var(--color-text);
 }
+
+.vs__dropdown-option--disabled {
+    opacity: .5;
+}

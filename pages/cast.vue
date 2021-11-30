@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-select v-model="selectedCaster" :options="casters" label="name"></v-select>
+        <v-select v-model="selectedCaster" :options="casters" label="name" :selectable="optionSelectable"></v-select>
 
         <div class="iframe">
             <iframe
@@ -20,19 +20,19 @@ const casters = [
         name: 'Ciskhan',
     },
     {
-        channel: '?',
+        channel: '',
         name: 'Colem',
     },
     {
         channel: 'commandeur_rod',
-        name: 'Comm..._rod',
+        name: 'Commandeur_rod ',
     },
     {
         channel: 'elhyar_',
         name: 'Elhyar',
     },
     {
-        channel: '?',
+        channel: '',
         name: 'Iceofempire',
     },
     {
@@ -66,11 +66,16 @@ export default {
     data() {
         return {
             casters,
-            selectedCaster: casters[0],
+            selectedCaster: casters.find(this.optionSelectable),
             twitchUrl(caster) {
-                return `https://player.twitch.tv/?channel=${caster.channel}&parent=damscreb.github.io&muted=true`;
+                return `https://player.twitch.tv/?channel=${caster.channel}&parent=localhost&muted=true`;
             },
         };
+    },
+    methods: {
+        optionSelectable(caster) {
+            return caster.channel && caster.channel.length > 0;
+        },
     },
 };
 </script>
