@@ -9,7 +9,7 @@
             <p class="font-text"><span>Email : luniversdethal@gmail.com</span></p>
         </div>
         <div class="iframe">
-            <iframe src="https://player.twitch.tv/?channel=Thalounette&'damscreb.github.io'&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
+            <iframe src="https://player.twitch.tv/?channel=Thalounette&parent=damscreb.github.io&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
         </div>
         <a class="font-title"><span>Chaine Youtube de Thalounette</span></a>
         <div class="thalounette-text">
