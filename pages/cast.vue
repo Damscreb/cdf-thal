@@ -58,11 +58,6 @@ const casters = [
 ].sort((casterA, casterB) => casterA.name.localeCompare(casterB.name));
 
 export default {
-    asyncData(ctx) {
-        // eslint-disable-next-line
-        console.log(ctx);
-        return {name: 'page name'};
-    },
     data() {
         return {
             casters,
