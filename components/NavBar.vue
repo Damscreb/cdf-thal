@@ -43,7 +43,6 @@ export default {
         width: inherit;
         max-width: inherit;
         height: 60px;
-
         & > .nav-responsive {
             display: flex;
             flex-direction: row;
@@ -52,20 +51,17 @@ export default {
             padding: 0 1em;
         }
     }
-
     a {
         text-decoration: none;
         display: flex;
         flex-direction: row;
         align-items: center;
-
         & .icon {
             display: none;
             font-size: 1.5em;
             color: var(--color-text);
             transition: 0.2s ease-in-out;
         }
-
         & h3 {
             position: relative;
             margin: 1em;
@@ -74,21 +70,17 @@ export default {
             color: var(--color-text);
             transition: 0.2s ease-in-out;
         }
-
         &:hover {
             cursor: pointer;
-
             & .icon, & h3 {
                 color: var(--color-text-highlight);
                 transition: 0.2s ease-in-out;
             }
         }
     }
-
     .underline {
         & h3 {
             transition: 0.2s ease-in-out;
-
             &::after {
                 content: '';
                 width: 100%;
@@ -99,19 +91,16 @@ export default {
                 left: 0px;
                 transition: 0.2s ease-in-out;
             }
-
             &:hover::after {
                 background-color: var(--color-text);
                 transition: 0.2s ease-in-out;
             }
         }
-
         & .icon {
             color: var(--color-text-highlight);
             transition: 0.2s ease-in-out;
         }
     }
-
     @media all and (max-width: 500px) {
         nav {
             border-radius: 0;
@@ -120,19 +109,16 @@ export default {
             top: unset;
             box-shadow: inset 0 10px 10px -7px var(--color-text-highlight);
         }
-
         .nav-responsive {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
-
         a {
             & .icon {
                 display: initial;
                 margin-inline: 0.5em;
             }
-
             & h3 {
                 display: none;
             }
