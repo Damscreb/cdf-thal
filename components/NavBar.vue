@@ -5,28 +5,39 @@
                 <Font-awesome-icon class="icon" :icon="['fas', 'home']" />
                 <h3 class="font-text">Accueil</h3>
             </Nuxt-Link>
+
             <Nuxt-Link exact-active-class="underline" to="/tournoi">
                 <Font-awesome-icon class="icon" :icon="['fas', 'gamepad']" />
                 <h3 class="font-text">Tournoi</h3>
             </Nuxt-Link>
+
             <Nuxt-Link exact-active-class="underline" to="/thalounette">
                 <Font-awesome-icon class="icon" :icon="['fas', 'female']" />
                 <h3 class="font-text">Thalounette</h3>
             </Nuxt-Link>
+
             <Nuxt-Link exact-active-class="underline" to="/équipe">
                 <Font-awesome-icon class="icon" :icon="['fas', 'users']" />
                 <h3 class="font-text">L'équipe</h3>
             </Nuxt-Link>
+
+            <Nuxt-Link exact-active-class="underline" to="/cast">
+              <Font-awesome-icon class="icon" :icon="['fab', 'twitch']" />
+              <h3 class="font-text">Cast</h3>
+            </Nuxt-Link>
+
             <SwitchTheme />
         </div>
     </nav>
 </template>
+
 <script>
 import SwitchTheme from '~/components/SwitchTheme.vue'
 export default {
     'components': {SwitchTheme}
 }
 </script>
+
 <style scoped lang="scss">
     nav {
         position: fixed;
