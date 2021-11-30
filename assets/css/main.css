@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url(../font/Roboto/Roboto-Medium.ttf);
+    font-family: 'Inter';
+    src: url(../font/Inter/Inter-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'Roboto Bold';
-    src: url(../font/Roboto/Roboto-Bold.ttf);
+    font-family: 'Inter Bold';
+    src: url(../font/Inter/Inter-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'Roboto Light';
-    src: url(../font/Roboto/Roboto-Light.ttf);
+    font-family: 'Inter Light';
+    src: url(../font/Inter/Inter-Light.ttf);
 }
 
 :root {

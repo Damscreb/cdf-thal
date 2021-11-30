@@ -30,15 +30,15 @@ export default {
     }
 
     .font-title{
-        font-family: "Roboto Bold";
+        font-family: "Inter Bold";
     }
 
     .font-text{
-        font-family: "Roboto";
+        font-family: "Inter";
     }
 
     .font-text-light {
-        font-family: "Roboto Light";
+        font-family: "Inter Light";
     }
 
     a {
