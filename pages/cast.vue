@@ -68,7 +68,7 @@ export default {
             casters,
             selectedCaster: casters[0],
             twitchUrl(caster) {
-                return `https://player.twitch.tv/?channel=${caster.name}&parent=damscreb.github.io&muted=true`;
+                return `https://player.twitch.tv/?channel=${caster.channel}&parent=damscreb.github.io&muted=true`;
             },
         };
     },
