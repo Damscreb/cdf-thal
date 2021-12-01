@@ -1,6 +1,6 @@
 <template>
     <div class="cast-page">
-        <v-select v-model="selectedCaster" :options="casters" label="name" :selectable="optionSelectable">
+        <v-select v-model="selectedCaster" :options="casters" label="name" :selectable="optionSelectable" v-on:open="refreshLiveStreams()">
             <template v-slot:option="option">
                 {{ option.name }}<span v-if="isLive(option.channel)" class="live-tag">live</span>
             </template>
@@ -8,12 +8,12 @@
 
         <iframe
             v-if="selectedCaster"
-            :src="twitchUrl(selectedCaster)"
+            :src="`https://player.twitch.tv/?channel=${selectedCaster.channel}&parent=localhost&muted=true`"
             frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%"/>
     </div>
 </template>
 <script>
-import vSelect from 'vue-select'
+import vSelect from 'vue-select';
 
 const casters = [
     {
@@ -76,13 +76,13 @@ export default {
     },
     methods: {
         isLive(channelName) {
-            return this.liveChannels.find(channel => channel.userName === channelName);
+            return this.liveChannels.find((channel) => channel.userName === channelName);
         },
         optionSelectable(caster) {
             return caster.channel && caster.channel.length > 0;
         },
-        twitchUrl(caster) {
-            return `https://player.twitch.tv/?channel=${caster.channel}&parent=localhost&muted=true`;
+        async refreshLiveStreams() {
+            this.liveChannels = await this.$twitch.areStreamsLive(casters.map(caster => caster.channel));
         },
     },
     mounted() {
