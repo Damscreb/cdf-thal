@@ -25,7 +25,7 @@ const casters = [
         name: 'Ciskhan',
     },
     {
-        channel: '',
+        channel: 'colem3',
         name: 'Colem',
     },
     {
@@ -37,7 +37,7 @@ const casters = [
         name: 'Elhyar',
     },
     {
-        channel: '',
+        channel: 'icehellss',
         name: 'Iceofempire',
     },
     {
