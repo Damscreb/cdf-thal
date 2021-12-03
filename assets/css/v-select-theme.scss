@@ -1,0 +1,20 @@
+$vs-colors: (
+    lightest: grey,
+    light: var(--color-text-highlight),
+    dark: var(--color-text),
+    darkest: none,
+);
+
+$vs-dropdown-bg: var(--color-black);
+$vs-state-active-bg: var(--color-text-highlight);
+$vs-state-active-color: var(--color-text-highlight);
+
+@import "~vue-select/src/scss/vue-select.scss";
+
+.vs__dropdown-option {
+    color: var(--color-text);
+}
+
+.vs__dropdown-option--disabled {
+    opacity: .5;
+}

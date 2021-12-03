@@ -1,3 +1,5 @@
+@import "v-select-theme";
+
 @font-face {
     font-family: 'Inter';
     src: url(../font/Inter/Inter-Medium.ttf);
@@ -37,7 +39,7 @@ label {
     align-items: center;
 }
 
-label:hover{
+label:hover {
     cursor: pointer;
 }
 
@@ -52,7 +54,7 @@ label:hover h2 {
     color: var(--color-text-highlight);
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
     label h2 {
         font-size: 1.3em;
     }
