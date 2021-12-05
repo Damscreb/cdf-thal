@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="players-display">
-            <Player v-for="player in players" :key="player.name" :name="player.name" :avatar="player.avatar" />
+            <Player v-for="player in somePlayers" :key="player.name" :name="player.name" :avatar="player.avatar" />
         </div>
     </div>
 </template>
@@ -27,11 +27,13 @@ export default {
     components: {Player},
     data() {
         return {
-            players: [],
+            allPlayers: null,
+            somePlayers: null,
         }
     },
     mounted() {
-        this.players = this.$getPlayerData();
+        this.allPlayers = this.$getPlayerData();
+        this.somePlayers = this.allPlayers.sort(() => 0.5 - Math.random()).slice(0, 14)
     },
 }
 </script>
@@ -81,14 +83,15 @@ export default {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        height: 800px;
-        overflow-y: scroll;
+        height: 420px;
+        overflow-y: hidden;
         scrollbar-color: var(--color-text-highlight) var(--color-main-background-color);
         margin-bottom: 2.5em;
     }
 
     @media all and (max-width: 500px){
         .players-display {
+            overflow-y: scroll;
             border-top: 2px var(--color-text-highlight) solid;
             border-bottom: 2px var(--color-text-highlight) solid;
             height: 500px;

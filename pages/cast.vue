@@ -8,7 +8,7 @@
 
         <iframe
             v-if="selectedCaster"
-            :src="`https://player.twitch.tv/?channel=${selectedCaster.channel}&parent=localhost&muted=true`"
+            :src="`https://player.twitch.tv/?channel=${selectedCaster.channel}&parent=damscreb.github.io&muted=true`"
             frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%"/>
     </div>
 </template>

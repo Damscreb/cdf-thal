@@ -55,7 +55,7 @@
                 <div class="dev">
                     <h3><p class='emoji'>&#128187;</p> Développeurs Web:</h3>
                     <div class="username">
-                        <p>Elunnor</p>
+                        <p><a href="https://github.com/Damscreb" target="_blank">Elunnor</a></p>
                         <p>le_chaton</p>
                     </div>
                 </div>
@@ -154,6 +154,7 @@
         & > div {
             text-align: center;
             background-color: var(--color-black);
+            box-shadow: var(--color-boxshadow1) 0px 10px 25px -20px, var(--color-boxshadow2) 0px 10px 20px -15px, var(--color-boxshadow3) 0px -2px 12px 0px inset;
             border-radius: 15px;
             padding: 1em;
             word-wrap: break-word;

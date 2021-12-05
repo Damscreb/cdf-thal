@@ -23,13 +23,16 @@
     --color-main-background-color: #151615;
     --color-text: #fff;
     --color-text-highlight: #568eff;
+    --color-boxshadow1: rgba(255, 255, 255, 0.25);
+    --color-boxshadow2: rgba(255, 255, 255, 0.3);
+    --color-boxshadow3: rgba(255, 255, 255, 0.35);
 }
 
 :root .light-theme {
-    --color-black: #2365e9;
-    --color-main-background-color: #f1f1f1;
-    --color-text: #a1d4fd;
-    --color-text-highlight: #fafafa;
+    --color-black: #043597;
+    --color-main-background-color: #bce3ec;
+    --color-text: #ffffff;
+    --color-text-highlight: #8dd0fd;
 }
 
 label {

@@ -38,6 +38,10 @@ export default {
         font-family: "Inter";
     }
 
+    .font-text, p, a, div, h4, th, td {
+        color: var(--color-text);
+    }
+
     .font-text-light {
         font-family: "Inter Light";
     }
