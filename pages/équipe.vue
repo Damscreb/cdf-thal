@@ -2,17 +2,17 @@
     <div class="staff">
         <img src="~/assets/image/Affiche_CDF.png" alt="Affiche du CDF">
         <div class="description">
-            <h2 class="font-title">PRÉSENTATION DE L'ÉQUIPE DE LA COUPE DE FRANCE AoE2</h2>
+            <h2>PRÉSENTATION DE L'ÉQUIPE DE LA COUPE DE FRANCE AoE2</h2>
             <div class="presentation font-text">
                 <div class="sponsor">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4B0;</p> Sponsor:</h3>
+                    <h3><p class='emoji'>&#x1F4B0;</p> Sponsor:</h3>
                     <div>
                         <p>Ausitin</p>
                     </div>
                 </div>
 
                 <div class="orga">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4DA;</p> Organisateur-trice-s:</h3>
+                    <h3><p class='emoji'>&#x1F4DA;</p> Organisateur-trice-s:</h3>
                     <div class="username-big">
                         <p>Thalounette (Host)</p>
                         <p>Ausitin</p>
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="admin">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4DD;</p> Administrateur-trice-s:</h3>
+                    <h3><p class='emoji'>&#x1F4DD;</p> Administrateur-trice-s:</h3>
                     <div class="username-big">
                         <p>DaisyChain</p>
                         <p>D.C.A</p>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="maps">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4CD;</p> Choix des cartes:</h3>
+                    <h3><p class='emoji'>&#x1F4CD;</p> Choix des cartes:</h3>
                     <div class="username">
                         <p>Miaou</p>
                         <p>Phare_Macie</p>
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="consulting">
-                    <h3 class="font-title"><p class='emoji'>&#x1F4A1;</p> Consultants:</h3>
+                    <h3><p class='emoji'>&#x1F4A1;</p> Consultants:</h3>
                     <div class="username">
                         <p>Margougou</p>
                         <p>Sitaux</p>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="dev">
-                    <h3 class="font-title"><p class='emoji'>&#128187;</p> Développeurs Web:</h3>
+                    <h3><p class='emoji'>&#128187;</p> Développeurs Web:</h3>
                     <div class="username">
                         <p>Elunnor</p>
                         <p>le_chaton</p>
@@ -116,7 +116,7 @@
     }
 
     .staff {
-        margin: 2em 0 1em 0;
+        margin-bottom: 1em;
     }
 
     .description {

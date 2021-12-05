@@ -3,7 +3,7 @@
         <div v-for="joueur in joueurs" :key="joueur.name" class="joueur">
             <img :src="joueur.avatar" />
             <div class="name">
-                <h4 class="font-text">
+                <h4>
                     {{ joueur.name }}
                 </h4>
             </div>
@@ -12,48 +12,48 @@
 </template>
 <script>
 export default {
-    data () {
+    data() {
         return {
-            'joueurs': [
+            joueurs: [
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/15/05/52/red-fox-6796430_960_720.jpg',
-                    'name': 'Elunnor'
+                    avatar: 'https://cdn.pixabay.com/photo/2021/11/15/05/52/red-fox-6796430_960_720.jpg',
+                    name: 'Elunnor',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/18/22/17/butterfly-6807529_960_720.jpg',
-                    'name': 'Thalounette'
+                    avatar: 'https://cdn.pixabay.com/photo/2021/11/18/22/17/butterfly-6807529_960_720.jpg',
+                    name: 'Thalounette',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/05/23/00/21/woman-6274879_960_720.png',
-                    'name': 'Elhyar'
+                    avatar: 'https://cdn.pixabay.com/photo/2021/05/23/00/21/woman-6274879_960_720.png',
+                    name: 'Elhyar',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2020/06/10/02/22/caricature-5280770_960_720.jpg',
-                    'name': 'Melo'
+                    avatar: 'https://cdn.pixabay.com/photo/2020/06/10/02/22/caricature-5280770_960_720.jpg',
+                    name: 'Melo',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/08/26/15/39/cat-6576397_960_720.jpg',
-                    'name': 'Aramatu'
+                    avatar: 'https://cdn.pixabay.com/photo/2021/08/26/15/39/cat-6576397_960_720.jpg',
+                    name: 'Aramatu',
                 },
                 {
-                    'avatar': 'https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-21.png',
-                    'name': 'Sus'
+                    avatar: 'https://wonder-day.com/wp-content/uploads/2020/10/wonder-day-among-us-21.png',
+                    name: 'Sus',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2018/11/19/05/53/animal-3824672_960_720.jpg',
-                    'name': 'MisterLu'
+                    avatar: 'https://cdn.pixabay.com/photo/2018/11/19/05/53/animal-3824672_960_720.jpg',
+                    name: 'MisterLu',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2020/07/10/19/07/she-5391770_960_720.jpg',
-                    'name': 'Clem'
+                    avatar: 'https://cdn.pixabay.com/photo/2020/07/10/19/07/she-5391770_960_720.jpg',
+                    name: 'Clem',
                 },
                 {
-                    'avatar': 'https://cdn.pixabay.com/photo/2021/11/15/21/39/rose-6799477_960_720.jpg',
-                    'name': 'Une jolie Rose Blanche'
-                }
-            ]
+                    avatar: 'https://cdn.pixabay.com/photo/2021/11/15/21/39/rose-6799477_960_720.jpg',
+                    name: 'Une jolie Rose Blanche',
+                },
+            ],
         }
-    }
+    },
 }
 </script>
 <style scoped lang="scss">

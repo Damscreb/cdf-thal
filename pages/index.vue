@@ -2,17 +2,17 @@
     <div class="main">
         <img src="~/assets/image/Affiche_CDF.png" alt="Affiche du CDF">
         <div class="description">
-            <h2 class="font-title">UNE COUPE DE FRANCE AoE2</h2>
-            <p class="font-text">
+            <h2>UNE COUPE DE FRANCE AoE2</h2>
+            <p>
                 La <span>Coupe de France AoE II</span> est un tournoi sur des cartes aléatoires en 1V1organisé par <span>Thalounette</span>.
             </p>
-            <p class="font-text">
+            <p>
                 L’objectif est de déterminer le <span>meilleur joueur francophone</span> de l’année 2021! Ce tournoi compte 128 places, cependant, seuls les joueurs ayant le niveau le plus élevé parmis les inscrits pourront participer.
                 Il se tient du 15 novembre au 19 décembre.
             </p>
         </div>
         <div class="description">
-            <div class="font-title">
+            <div>
                 <h2>DES JOUEURS</h2>
             </div>
         </div>
@@ -24,15 +24,15 @@
 <script>
 import Player from '~/components/Player.vue'
 export default {
-    'components': {Player},
-    data () {
+    components: {Player},
+    data() {
         return {
-            'players': []
+            players: [],
         }
     },
-    mounted () {
+    mounted() {
         this.players = this.$getPlayerData();
-    }
+    },
 }
 </script>
 <style lang="scss" scoped>
@@ -50,10 +50,6 @@ export default {
     p {
         margin-bottom: 0.7em;
         font-size: 1.1em;
-    }
-
-    .main {
-        margin-top: 1em;
     }
 
     img {

@@ -17,13 +17,13 @@ import GeneralInfos from '~/components/tournament/GeneralInfos.vue'
 import Maps from '~/components/tournament/Maps.vue'
 import Players from '~/components/tournament/Players.vue'
 export default {
-    'components': {
+    components: {
         Bracket,
         Cashprize,
         GeneralInfos,
         Maps,
-        Players
-    }
+        Players,
+    },
 }
 </script>
 <style lang="scss" scoped>
@@ -37,7 +37,7 @@ export default {
         position: relative;
         text-align: center;
         text-decoration: underline;
-        margin: 2em 0 1.5em 0;
+        margin: 0.5em 0 1.5em 0;
         &::after, &::before {
             display: block;
             content: '';

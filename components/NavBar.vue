@@ -76,6 +76,10 @@ export default {
                 color: var(--color-text-highlight);
                 transition: 0.2s ease-in-out;
             }
+            & h3::after {
+                background-color: var(--color-text);
+                transition: 0.2s ease-in-out;
+            }
         }
     }
     .underline {
@@ -89,10 +93,6 @@ export default {
                 position: absolute;
                 bottom: -3px;
                 left: 0px;
-                transition: 0.2s ease-in-out;
-            }
-            &:hover::after {
-                background-color: var(--color-text);
                 transition: 0.2s ease-in-out;
             }
         }

@@ -1,6 +1,6 @@
 <template>
     <div class="cast-page">
-        <v-select v-model="selectedCaster" :options="casters" label="name" :selectable="optionSelectable" v-on:open="refreshLiveStreams()">
+        <v-select v-if="casters" v-model="selectedCaster" :options="casters" label="name" :selectable="optionSelectable" v-on:open="refreshLiveStreams()">
             <template v-slot:option="option">
                 {{ option.name }}<span v-if="isLive(option.channel)" class="live-tag">live</span>
             </template>
@@ -13,64 +13,17 @@
     </div>
 </template>
 <script>
+import data from '~/content/Liste_casters_CDF.json'
 import vSelect from 'vue-select';
-
-const casters = [
-    {
-        channel: 'themole67',
-        name: 'Themole',
-    },
-    {
-        channel: 'ciskhan_',
-        name: 'Ciskhan',
-    },
-    {
-        channel: 'colem3',
-        name: 'Colem',
-    },
-    {
-        channel: 'commandeur_rod',
-        name: 'Commandeur_rod ',
-    },
-    {
-        channel: 'elhyar_',
-        name: 'Elhyar',
-    },
-    {
-        channel: 'icehellss',
-        name: 'Iceofempire',
-    },
-    {
-        channel: 'melon_l_esturgeon',
-        name: 'Melo',
-    },
-    {
-        channel: 'luldorelle',
-        name: 'SMOC Vince',
-    },
-    {
-        channel: 'sylenixfr',
-        name: 'Sylenix',
-    },
-    {
-        channel: 'thalounette',
-        name: 'Thalounette',
-    },
-    {
-        channel: 'tutusasylum',
-        name: 'Tutus',
-    },
-].sort((casterA, casterB) => casterA.name.localeCompare(casterB.name));
-
 export default {
     async asyncData({$twitch}) {
-        const liveChannels = await $twitch.areStreamsLive(casters.map(caster => caster.channel));
+        const liveChannels = await $twitch.areStreamsLive(data.map((caster) => caster.channel));
         return {liveChannels};
     },
     components: {vSelect},
     data() {
         return {
-            casters,
+            casters: null,
             selectedCaster: null,
         };
     },
@@ -82,11 +35,12 @@ export default {
             return caster.channel && caster.channel.length > 0;
         },
         async refreshLiveStreams() {
-            this.liveChannels = await this.$twitch.areStreamsLive(casters.map(caster => caster.channel));
+            this.liveChannels = await this.$twitch.areStreamsLive(data.map((caster) => caster.channel));
         },
     },
     mounted() {
-        this.selectedCaster = casters.find(this.optionSelectable);
+        this.casters = data.sort((casterA, casterB) => casterA.name.localeCompare(casterB.name))
+        this.selectedCaster = this.casters.find(this.optionSelectable);
     },
 };
 </script>

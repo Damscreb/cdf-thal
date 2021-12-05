@@ -2,10 +2,10 @@
     <div class="cashprize-container">
         <input id="cashprize" type="checkbox">
         <label for="cashprize">
-            <h2 class="font-title">LE CASHPRIZE</h2>
+            <h2>LE CASHPRIZE</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
-        <div class="font-text text text-cashprize">
+        <div class="text text-cashprize">
             <p>Initialement de 1500€, le cashprize total de l’événement s’élève désormais à <span>1780€</span> et sera attribué à tous les joueurs ayant atteint les 16èmes de finale sur base de la répartition suivante :</p>
             <table>
                 <thead>

@@ -2,10 +2,10 @@
     <div>
         <input id="maps" type="checkbox">
         <label for="maps">
-            <h2 class="font-title">LES MAPS</h2>
+            <h2>LES MAPS</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
-        <div class="font-text text text-maps">
+        <div class="text text-maps">
             <p>Toutes les informations concernant les maps pour le tournoi sont disponibles sur le <a class="discord" href="https://discord.gg/BankCjPtg2" target="_blank">discord de la compétition</a></p>
             <p><span>Le nom du Map pack</span> pour avoir toutes les cartes en jeu est « Coupe de France 2021 – Map Pack »</p>
             <p>Aperçu des différentes cartes du tournois :</p>
@@ -20,32 +20,32 @@
 </template>
 <script>
 export default {
-    data () {
+    data() {
         return {
-            'images': []
+            images: [],
         }
     },
-    'methods': {
-        importAll (importedImages) {
+    methods: {
+        importAll(importedImages) {
             this.images.push({
-                'name': 'African_River',
-                'pathLong': 'No image',
-                'pathShort': require('../../assets/image/No_Image.jpg')
+                name: 'African_River',
+                pathLong: 'No image',
+                pathShort: require('../../assets/image/No_Image.jpg'),
             })
             importedImages.keys().forEach((key) => {
-                const shortKey = key.split('/'),
-                    shortKeyUnformated = shortKey[1].split('.')
+                const shortKey = key.split('/');
+                const shortKeyUnformated = shortKey[1].split('.');
                 this.images.push({
-                    'name': `${shortKeyUnformated[0]}`,
-                    'pathLong': importedImages(key),
-                    'pathShort': require(`../../assets/image/map/${shortKey[1]}`)
+                    name: `${shortKeyUnformated[0]}`,
+                    pathLong: importedImages(key),
+                    pathShort: require(`../../assets/image/map/${shortKey[1]}`),
                 })
             });
-        }
+        },
     },
-    mounted () {
+    mounted() {
         this.importAll(require.context('../../assets/image/map', true, /\.png$/u));
-    }
+    },
 }
 </script>
 <style lang="scss" scoped>

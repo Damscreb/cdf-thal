@@ -2,10 +2,10 @@
     <div>
         <input id="bracket" type="checkbox">
         <label for="bracket">
-            <h2 class="font-title">L'ARBRE DU TOURNOI</h2>
+            <h2>L'ARBRE DU TOURNOI</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
-        <div class="font-text text text-bracket">
+        <div class="text text-bracket">
             <p>Vous pouvez choisir ce que vous affichez en haut à droite de l'arbre en cliquant sur "Full bracket" sinon le lien est <a target="_blank" href="https://challonge.com/fr/CoupeDeFranceAoE2">ici</a></p>
             <iframe src="https://challonge.com/fr/CoupeDeFranceAoE2/module" width="100%" height="850" frameborder="1" scrolling="auto" allowtransparency="true"></iframe>
         </div>

@@ -2,10 +2,10 @@
     <div id="player-div">
         <input id="player" type="checkbox">
         <label for="player">
-            <h2 class="font-title">LES JOUEURS</h2>
+            <h2>LES JOUEURS</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
-        <div class="font-text text text-players players-display">
+        <div class="text text-players players-display">
             <Player v-for="player in players" :key="player.name" :name="player.name" :avatar="player.avatar" />
         </div>
     </div>
@@ -13,15 +13,15 @@
 <script>
 import Player from '~/components/Player.vue'
 export default {
-    'components': {Player},
-    data () {
+    components: {Player},
+    data() {
         return {
-            'players': []
+            players: [],
         }
     },
-    mounted () {
+    mounted() {
         this.players = this.$getPlayerData();
-    }
+    },
 }
 </script>
 <style lang="scss" scoped>

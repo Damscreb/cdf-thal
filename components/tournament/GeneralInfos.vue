@@ -2,10 +2,10 @@
     <div class="infos-container">
         <input id="infos" type="checkbox">
         <label for="infos">
-            <h2 class="font-title">INFORMATIONS GÉNÉRALES</h2>
+            <h2>INFORMATIONS GÉNÉRALES</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
-        <div class="font-text text text-infos">
+        <div class="text text-infos">
             <div class='img-text'>
                 <img src='~/assets/image/Logo_CDF.png' alt="Logo du tournoi" />
                 <p>La Coupe de France AoE II est un <span>tournoi RM 1V1</span> qui se tient du 15 novembre au 19 décembre et dont l’objectif est de déterminer le meilleur joueur francophone de l’année 2021.</p>

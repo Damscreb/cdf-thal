@@ -21,15 +21,15 @@
     --little-size: 500px;
     --color-black: #050605;
     --color-main-background-color: #151615;
-    --color-text: rgb(243, 240, 225);
-    --color-text-highlight: #2365e9;
+    --color-text: #fff;
+    --color-text-highlight: #568eff;
 }
 
 :root .light-theme {
-    --color-black: #d3e6f7;
+    --color-black: #2365e9;
     --color-main-background-color: #f1f1f1;
-    --color-text: #006dc9;
-    --color-text-highlight: #1315a7;
+    --color-text: #a1d4fd;
+    --color-text-highlight: #fafafa;
 }
 
 label {

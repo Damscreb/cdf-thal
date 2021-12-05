@@ -2,6 +2,10 @@
     <main>
         <NavBar/>
         <Nuxt/>
+        <div class="background">
+            <div class="black-filter"></div>
+            <img src="~/assets/image/background_image.jpeg" alt="background"/>
+        </div>
         <Footer/>
     </main>
 </template>
@@ -26,15 +30,11 @@ export default {
         height: auto;
     }
 
-    body {
-        background-color: var(--color-main-background-color);
-    }
-
-    .font-title {
+    .font-title, h1, h2, h3 {
         font-family: "Inter Bold";
     }
 
-    .font-text {
+    .font-text, p, a, span, div, h4, th, td {
         font-family: "Inter";
     }
 
@@ -59,11 +59,38 @@ export default {
     main {
         display: flex;
         flex-direction: column;
-        padding-top: 5em;
+        padding-top: 6em;
         margin: auto;
         max-width: 1200px;
         width: 100%;
         min-height: 91.6vh;
+    }
+
+    .black-filter{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.8) 100%);
+    }
+
+    .background {
+        height: 100%;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: black;
+        z-index: -2;
+        & img {
+            filter: blur(5px);
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+            object-position: 50% 0;
+        }
     }
 
     @media all and (max-width: 500px) {

@@ -2,7 +2,7 @@
     <div class="joueur">
         <img :src="avatar" />
         <div class="name">
-            <h4 class="font-text">
+            <h4>
                 {{ name }}
             </h4>
         </div>
@@ -10,16 +10,16 @@
 </template>
 <script>
 export default {
-    'props': {
-        'avatar': {
-            'default': '~/assets/image/Affiche_CDF.png',
-            'type': String
+    props: {
+        avatar: {
+            default: '~/assets/image/Affiche_CDF.png',
+            type: String,
         },
-        'name': {
-            'default': 'Joueur',
-            'type': String
-        }
-    }
+        name: {
+            default: 'Joueur',
+            type: String,
+        },
+    },
 }
 </script>
 <style scoped lang="scss">

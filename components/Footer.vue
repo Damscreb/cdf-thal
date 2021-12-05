@@ -77,6 +77,11 @@ export default {
             border-radius: 0;
         }
 
+        h3 {
+            margin-top: 0.6em;
+            margin-bottom: 0.6em;
+        }
+
         a {
             margin-inline: 0.2em;
             justify-content: center;
