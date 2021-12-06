@@ -34,8 +34,10 @@ export default {
     mounted() {
         this.allPlayers = this.$getPlayerData();
         // Get only 14 random players
-        this.somePlayers = this.allPlayers.sort(() => 0.5 - Math.random()).slice(0, 14)
-        this.somePlayers = this.somePlayers.sort((playerA, playerB) => playerA.name.localeCompare(playerB.name))
+        this.somePlayers = this.allPlayers.
+            sort(() => 0.5 - Math.random()).
+            slice(0, 14).
+            sort((playerA, playerB) => playerA.name.localeCompare(playerB.name))
     },
 }
 </script>
