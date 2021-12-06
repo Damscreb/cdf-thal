@@ -13,13 +13,13 @@
                 <Font-awesome-icon class="icon" :icon="['fas', 'female']"/>
                 <h3 class="font-text">Thalounette</h3>
             </Nuxt-Link>
-            <Nuxt-Link exact-active-class="underline" to="/équipe">
-                <Font-awesome-icon class="icon" :icon="['fas', 'users']"/>
-                <h3 class="font-text">L'équipe</h3>
-            </Nuxt-Link>
             <Nuxt-Link exact-active-class="underline" to="/cast">
                 <Font-awesome-icon class="icon" :icon="['fab', 'twitch']"/>
                 <h3 class="font-text">Cast</h3>
+            </Nuxt-Link>
+            <Nuxt-Link exact-active-class="underline" to="/équipe">
+                <Font-awesome-icon class="icon" :icon="['fas', 'users']"/>
+                <h3 class="font-text">L'équipe</h3>
             </Nuxt-Link>
             <SwitchTheme/>
         </div>

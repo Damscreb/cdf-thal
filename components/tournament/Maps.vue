@@ -27,11 +27,6 @@ export default {
     },
     methods: {
         importAll(importedImages) {
-            this.images.push({
-                name: 'African_River',
-                pathLong: 'No image',
-                pathShort: require('../../assets/image/No_Image.jpg'),
-            })
             importedImages.keys().forEach((key) => {
                 const shortKey = key.split('/');
                 const shortKeyUnformated = shortKey[1].split('.');
