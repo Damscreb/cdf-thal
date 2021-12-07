@@ -11,6 +11,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'author', content: 'Damscreb (Elunnor)' },
       { hid: 'description', name: 'description', content: 'Toutes les informations sur le tournoi de Thalounette' },
       { name: 'format-detection', content: 'telephone=no' }
     ],

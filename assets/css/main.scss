@@ -29,10 +29,19 @@
 }
 
 :root .light-theme {
-    --color-black: #043597;
-    --color-main-background-color: #bce3ec;
-    --color-text: #ffffff;
-    --color-text-highlight: #8dd0fd;
+    --color-black: #d3e6f7;
+    --color-main-background-color: #f1f1f1;
+    --color-text: #006dc9;
+    --color-text-highlight: #1619b9;
+    --color-boxshadow1: rgba(90, 90, 90, 0.25);
+    --color-boxshadow2: rgba(90, 90, 90, 0.3);
+    --color-boxshadow3: rgba(90, 90, 90, 0.35);
+}
+
+.light-theme .main-background {
+    & img, & .black-filter {
+        display:none;
+    }
 }
 
 label {

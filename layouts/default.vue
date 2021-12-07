@@ -2,7 +2,7 @@
     <main>
         <NavBar/>
         <Nuxt/>
-        <div class="background">
+        <div class="main-background">
             <div class="black-filter"></div>
             <img src="~/assets/image/background_image.jpeg" alt="background"/>
         </div>
@@ -17,6 +17,37 @@ export default {
     components: {
         Footer,
         NavBar,
+    },
+    data() {
+        return {
+            routeName: [
+                {
+                    name: 'Accueil',
+                    route: 'index',
+                },
+                {
+                    name: 'Tournoi',
+                    route: 'tournoi',
+                },
+                {
+                    name: 'Thalounette',
+                    route: 'thalounette',
+                },
+                {
+                    name: 'Cast',
+                    route: 'cast',
+                },
+                {
+                    name: 'L\'équipe',
+                    route: 'équipe',
+                },
+            ],
+        }
+    },
+    head() {
+        return {
+            title: `Site de la CDF - ${this.routeName.find((object) => object.route === this.$route.name).name}`,
+        }
     },
 };
 </script>
@@ -80,13 +111,13 @@ export default {
         background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.8) 100%);
     }
 
-    .background {
+    .main-background {
         height: 100%;
         width: 100vw;
         top: 0;
         left: 0;
         position: fixed;
-        background-color: black;
+        background-color: var(--color-main-background-color);
         z-index: -2;
         & img {
             filter: blur(5px);
