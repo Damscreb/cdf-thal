@@ -67,6 +67,10 @@ label:hover h2 {
 }
 
 @media all and (max-width: 500px) {
+    main {
+        font-size: 14px;
+    }
+
     label h2 {
         font-size: 1.3em;
     }

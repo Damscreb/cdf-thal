@@ -192,5 +192,14 @@
         .presentation {
             grid-template-areas: 'sponsor' 'orga' 'admin' 'maps' 'consulting' 'dev';
         }
+
+        img {
+            width: 100%;
+            height: unset;
+            object-fit: cover;
+            object-position: 50% 20%;
+            border-radius: 15px;
+            margin-bottom: 2em;
+        }
     }
 </style>

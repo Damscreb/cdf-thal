@@ -34,7 +34,7 @@
             position: relative;
             overflow-y: scroll;
             &-infos{
-                height: 390px;
+                height: 400px;
             }
             & p:last-child {
                 position: relative;

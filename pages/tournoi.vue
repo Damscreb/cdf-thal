@@ -2,11 +2,12 @@
     <div class="tournament">
         <h1 class="font-title">TOUTES LES INFORMATIONS RELATIVES AU TOURNOI</h1>
         <div class="dropdown-menu">
-            <GeneralInfos />
-            <Cashprize />
-            <Bracket />
-            <Players />
-            <Maps />
+            <GeneralInfos/>
+            <Cashprize/>
+            <Rules/>
+            <Bracket/>
+            <Maps/>
+            <Players/>
         </div>
     </div>
 </template>
@@ -16,6 +17,7 @@ import Cashprize from '~/components/tournament/Cashprize.vue'
 import GeneralInfos from '~/components/tournament/GeneralInfos.vue'
 import Maps from '~/components/tournament/Maps.vue'
 import Players from '~/components/tournament/Players.vue'
+import Rules from '~/components/tournament/Rules.vue'
 export default {
     components: {
         Bracket,
@@ -23,6 +25,7 @@ export default {
         GeneralInfos,
         Maps,
         Players,
+        Rules,
     },
 }
 </script>

@@ -83,5 +83,14 @@
         .thalounette-text {
             padding: 0 1em;
         }
+
+        img {
+            width: 100%;
+            height: unset;
+            object-fit: cover;
+            object-position: 50% 20%;
+            border-radius: 15px;
+            margin-bottom: 2em;
+        }
     }
 </style>

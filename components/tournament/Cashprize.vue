@@ -34,7 +34,7 @@
             line-height: 130%;
         }
         &:checked ~ .text {
-            padding: 0.75em 0.75em 2em 0;
+            padding: 0.75em 0.75em 1em 0;
             transition: .3s linear;
             position: relative;
             overflow-y: scroll;
@@ -48,7 +48,7 @@
                 background-color: var(--color-text-highlight);
                 position: absolute;
                 left: 0;
-                bottom: -30px;
+                bottom: -5px;
                 border-radius: 1px;
             }
         }
