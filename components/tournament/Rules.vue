@@ -2,7 +2,7 @@
     <div class="rules-container">
         <input id="rules" type="checkbox">
         <label for="rules">
-            <h2>RÈGLES</h2>
+            <h2>LES RÈGLES</h2>
             <Font-awesome-icon class="icon-format" :icon="['fas', 'chevron-right']" />
         </label>
         <div class="text text-rules">
