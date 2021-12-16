@@ -16,7 +16,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/cdf-thal/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/cdf-aoe/favicon.ico' },
       {
           'href': 'https://use.fontawesome.com/releases/v5.6.1/css/all.css',
           'rel': 'stylesheet'
@@ -63,7 +63,7 @@ export default {
 
   target: 'static',
   router: {
-    base: '/cdf-thal/'
+    base: '/cdf-aoe/'
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
