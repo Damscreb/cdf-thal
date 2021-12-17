@@ -9,7 +9,7 @@
             <p><span>Email : luniversdethal@gmail.com</span></p>
         </div>
         <div class="iframe">
-            <iframe src="https://player.twitch.tv/?channel=Thalounette&parent=cdf-aoe.fr&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
+            <iframe src="https://player.twitch.tv/?channel=Thalounette&parent=cdf-aoe.fr&parent=www.cdf-aoe.fr&muted=true" frameborder="0" allowfullscreen="true" scrolling="no" height="500px" width="80%" />
         </div>
         <h2>Chaine Youtube de Thalounette</h2>
         <div class="thalounette-text">
@@ -19,7 +19,7 @@
             <p>Retrouvez ici la vidéo du cast de son dernier tournoi caritatif, <span>L'Endowar</span>, organisé par Elhyar.</p>
         </div>
         <div class="iframe">
-            <iframe width="80%" height="500px" src="https://www.youtube.com/embed/ZVTYBH27h3I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            <iframe width="80%" height="500px" src="https://www.youtube.com/watch?v=ZU1z0zbo4JA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
         </div>
     </div>
 </template>

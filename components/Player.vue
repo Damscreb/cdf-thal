@@ -45,9 +45,14 @@ export default {
             width: 100%;
             height: 20%;
             & h4 {
+                width: inherit;
+                height: 50%;
+                line-height: 100%;
                 color: var(--color-text);
-                padding: 0 1em;
                 text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
             }
         }
         &:hover {

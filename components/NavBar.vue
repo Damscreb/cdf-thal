@@ -1,11 +1,11 @@
 <template>
     <nav>
         <div class="nav-responsive">
-            <NavbarItem link="" icon="home" name="Accueil"/>
-            <NavbarItem link="tournoi" icon="gamepad" name="Tournoi"/>
-            <NavbarItem link="thalounette" icon="female" name="Thalounette"/>
-            <NavbarItem link="cast" icon="twitch" name="Cast"/>
-            <NavbarItem link="équipe" icon="users" name="L'équipe"/>
+            <NavbarItem link="" iconType="fas" icon="home" name="Accueil"/>
+            <NavbarItem link="tournoi" iconType="fas" icon="gamepad" name="Tournoi"/>
+            <NavbarItem link="thalounette" iconType="fas" icon="female" name="Thalounette"/>
+            <NavbarItem link="cast" iconType="fab" icon="twitch" name="Cast"/>
+            <NavbarItem link="équipe" iconType="fas" icon="users" name="L'équipe"/>
             <SwitchTheme/>
         </div>
     </nav>

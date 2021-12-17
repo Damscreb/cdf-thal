@@ -1,7 +1,6 @@
 <template>
     <Nuxt-Link exact-active-class="underline" :to="`/${link}`">
-        <Font-awesome-icon v-if="icon === 'twitch'" class="icon" :icon="['fab', `${icon}`]"/>
-        <Font-awesome-icon v-else class="icon" :icon="['fas', `${icon}`]"/>
+        <Font-awesome-icon class="icon" :icon="[`${iconType}`, `${icon}`]"/>
         <h3 class="font-text">{{ name }}</h3>
     </Nuxt-Link>
 </template>
@@ -9,6 +8,10 @@
 export default {
     props: {
         icon: {
+            required: true,
+            type: String,
+        },
+        iconType: {
             required: true,
             type: String,
         },
