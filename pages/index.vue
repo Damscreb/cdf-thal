@@ -4,10 +4,10 @@
         <div class="description">
             <h2>UNE COUPE DE FRANCE AoE2</h2>
             <p>
-                La <span>Coupe de France AoE II</span> est un tournoi sur des cartes aléatoires en 1V1organisé par <span>Thalounette</span>.
+                La <span>Coupe de France AoE II</span> est un tournoi sur des cartes aléatoires en 1V1 organisé par <span>Thalounette</span>.
             </p>
             <p>
-                L’objectif est de déterminer le <span>meilleur joueur francophone</span> de l’année 2021! Ce tournoi compte 128 places, cependant, seuls les joueurs ayant le niveau le plus élevé parmis les inscrits pourront participer.
+                L’objectif est de déterminer le <span>meilleur joueur francophone</span> de l’année 2021! Ce tournoi compte 128 places, cependant, seuls les joueurs ayant le niveau le plus élevé parmi les inscrits pourront participer.
                 Il se tient du 15 novembre au 19 décembre.
             </p>
         </div>
