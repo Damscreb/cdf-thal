@@ -19,7 +19,7 @@
             <p>Retrouvez ici la vidéo du cast de son dernier tournoi caritatif, <span>L'Endowar</span>, organisé par Elhyar.</p>
         </div>
         <div class="iframe">
-            <iframe width="80%" height="500px" src="https://www.youtube.com/watch?v=ZU1z0zbo4JA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            <iframe width="80%" height="500px" src="https://www.youtube.com/embed/ZU1z0zbo4JA" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
         </div>
     </div>
 </template>
