@@ -108,7 +108,7 @@ export default {
         z-index: 1;
         top: 0;
         left: 0;
-        background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 35%, rgba(0,0,0,0.8) 100%);
+        background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.85) 90%, rgba(0,0,0,0.9) 100%);
     }
 
     .main-background {
